@@ -5,6 +5,7 @@ import HelloTailwind from './components/HelloTailwind.vue'
 
 <template>
   <div>
+    <NavbarSection />
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="h-24 p-6 transition duration-300 hover:drop-shadow-[0_0_2em_#646cffaa]" alt="Vite logo"/>
     </a>
