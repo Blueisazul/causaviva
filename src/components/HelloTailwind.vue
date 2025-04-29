@@ -7,3 +7,14 @@
         </a>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'NavbarSection',
+data() {
+        return {
+            active: '#home'
+        }
+    },
+}
+</script>
