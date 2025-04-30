@@ -2,7 +2,7 @@
     <svg
         id="logo"
         data-name="logo"
-        width="240" height="160" 
+        
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
         viewBox="0 0 768.78 469.06"

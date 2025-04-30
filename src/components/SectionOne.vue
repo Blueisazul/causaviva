@@ -2,13 +2,13 @@
   <div>
     <NavbarSection />
      <!-- Hero Start -->
-     <section class="py-36 lg:py-64 w-full table relative bg-center bg-cover" :style="{ backgroundImage: `url(${bgindexone})` }" id="home">
+     <section class="py-9 lg:py-18 w-full table relative bg-center bg-cover" :style="{ backgroundImage: `url(${bgindexone})` }" id="home">
 
             <div class="absolute inset-0 bg-black opacity-80"></div>
             
             <div class="container relative pl-60">
-                <div class="text-white">
-                    <Causa class=" text-white"/>
+                <div>
+                    <Causa class=" text-white" width="300"  />
                 </div>
                 <div class="grid grid-cols-1 mt-12">
                     <h4 class="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-7 position-relative">Lorem ipsum dolor sit amet,<br>consectetur adipiscing <span class="typewrite relative text-type-element" ref="typedText"></span></h4>
