@@ -3,10 +3,15 @@
     <NavbarSection />
      <!-- Hero Start -->
      <section class="py-36 lg:py-64 w-full table relative bg-center bg-cover" :style="{ backgroundImage: `url(${bgindexone})` }" id="home">
+
             <div class="absolute inset-0 bg-black opacity-80"></div>
-            <div class="container relative">
+            
+            <div class="container relative pl-60">
+                <div class="text-white">
+                    <Causa class=" text-white"/>
+                </div>
                 <div class="grid grid-cols-1 mt-12">
-                    <h4 class="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-7 position-relative">Providing Brilliant Ideas <br>For Your <span class="typewrite relative text-type-element" ref="typedText" data-type='[ "Business", "Startups", "Digital Agency", "Marketing" ]'></span></h4>
+                    <h4 class="text-white lg:text-5xl text-4xl lg:leading-normal leading-normal font-medium mb-7 position-relative">Lorem ipsum dolor sit amet,<br>consectetur adipiscing <span class="typewrite relative text-type-element" ref="typedText"></span></h4>
                 
                     <p class="text-white opacity-50 mb-0 max-w-2xl text-lg">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
                 
@@ -34,12 +39,16 @@
 import NavbarSection from '../components/NavbarSection.vue';
 import FooterSection from '../components/FooterSection.vue';
 import bgindexone from '../assets/images/bgindexone.jpg';
+import Causa from '../icons/Causa.vue'; // Correcto
+import Typed from 'typed.js'; // Importa Typed.js
 
 export default {
   name: 'SectionOne',
   components: {
     NavbarSection,
     FooterSection,
+    Causa,
+    Typed,
   },
   data() {
     return {
@@ -53,7 +62,7 @@ export default {
   methods: {
     setupTyped() {
       const options = {
-        strings: ["Business", "Startups", "Digital Agency", "Marketing"],
+        strings: ["despierta conciencias", "cambia destinos", "inspira futuros", "construye un legado"],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true,
