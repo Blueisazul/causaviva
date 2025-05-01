@@ -11,7 +11,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
 
-            <button class="cursor-pointer text-neutral-900 text-md font-semibold bg-yellow-300 hover:bg-yellow-400 rounded-full px-4 py-2 w-fit">
+            <button class="cursor-pointer text-neutral-900 text-md font-semibold bg-yellow-300 hover:bg-amber-300 rounded-full px-4 py-2 w-fit">
                 Read More
             </button>
             </div>
