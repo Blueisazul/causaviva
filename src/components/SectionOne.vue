@@ -29,17 +29,6 @@
       </div>
     </section>
     <!-- Hero End -->
-
-    <AboutSection />
-    <ServiceSection />
-    <PortfolioSection />
-    <TestimonialSection />
-    <PricingSection />
-    <TeamSection />
-    <BlogSection />
-    <ContactSection />
-    <FooterSection />
-    <SwitcherSection />
   </div>
 </template>
 
