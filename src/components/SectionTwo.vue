@@ -20,9 +20,9 @@
             <div class="w-1/2 grid grid-cols-2 grid-rows-none gap-4">
             <!-- Arriba izquierda -->
             <div class="flex flex-col justify-end items-end p-4">
-                <div class="bg-slate-200 rounded-2xl p-4 flex flex-col items-end">
+                <div class="w-36 h-36 bg-slate-200 rounded-2xl p-4 flex flex-col justify-end items-end">
                     <div class="flex flex-row items-center">
-                        <div class="bg-neutral-900 h-[3px] w-18 my-2 mx-1"></div>
+                        <div class="bg-neutral-900 h-[2px] w-16 my-2 mx-1"></div>
                         <div class="text-neutral-900 text-lg font-semibold">50k+</div>
                     </div>
                     <div class="text-neutral-900 text-md font-semibold">Goals Project</div>
