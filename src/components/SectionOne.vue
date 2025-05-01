@@ -12,10 +12,10 @@
       <div class="absolute inset-0 bg-black opacity-80"></div>
 
       <div class="container relative pl-32">
-        <div>
+        <div class="my-8">
           <Causa class="text-white" width="300" />
         </div>
-        <div class="grid grid-cols-1 mt-15">
+        <div class="grid grid-cols-1 my-15">
           <h4
             class="text-white lg:text-4xl text-3xl lg:leading-normal leading-normal font-medium mb-7 position-relative"
           >
