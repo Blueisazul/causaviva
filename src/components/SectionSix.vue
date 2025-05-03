@@ -1,6 +1,6 @@
 <template>
     <!-- Formulario de Contacto -->
-    <div class="container w-full mx-auto px-50 py-20">
+    <div class="max-w-screen-xl mx-auto px-50 py-20">
       <div class="flex flex-col md:flex-row justify-center gap-30">
         <!-- Contacto -->
         <section class="w-full bg-linear-to-bl from-yellow-400/90 to-yellow-500 shadow-md rounded-4xl p-6 flex content-between mb-8 transition-all duration-300 hover:bg-gradient-to-bl hover:from-yellow-400/80 hover:to-yellow-500/90">         
