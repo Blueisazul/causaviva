@@ -3,6 +3,7 @@ import SectionOne from '../components/SectionOne.vue';
 import SectionTwo from '../components/SectionTwo.vue';
 import SectionThree from '../components/SectionThree.vue';
 import SectionFour from '../components/SectionFour.vue';
+import SectionFive from '../components/SectionFive.vue';
 import FooterSection from '../components/FooterSection.vue';
 </script>
 
@@ -11,6 +12,7 @@ import FooterSection from '../components/FooterSection.vue';
   <SectionTwo />
   <SectionThree />
   <SectionFour />
+  <SectionFive />
 
   <FooterSection />
 </template>

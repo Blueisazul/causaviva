@@ -20,10 +20,12 @@
             class="text-white lg:text-4xl text-3xl lg:leading-normal leading-normal font-medium mb-7 position-relative"
           >
             Lorem ipsum dolor sit amet,<br />consectetur adipiscing
-            <span
-              class="typewrite relative text-type-element"
-              ref="typedText"
-            ></span>
+            <a class="text-amber-300/90">
+              <span
+                class="typewrite relative text-type-element"
+                ref="typedText"
+              ></span>
+            </a>
           </h4>
         </div>
       </div>

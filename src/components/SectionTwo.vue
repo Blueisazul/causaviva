@@ -11,9 +11,22 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
 
-            <button class="cursor-pointer text-neutral-900 text-md font-semibold bg-yellow-300 hover:bg-amber-300 rounded-full px-4 py-2 w-fit">
-                Read More
-            </button>
+            <!-- Contenedor padre con la clase group -->
+            <div class="flex items-center justify-end w-fit">
+            <div class="group flex items-center cursor-pointer text-gray-700 text-md font-bold transition bg-yellow-300 hover:bg-amber-300 rounded-full px-4 py-2">
+                <span class="transition duration-300">Ver más</span>
+                <div class="transition-transform transform duration-300 ml-1 group-hover:translate-x-2">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 22" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-chevron-right"
+                >
+                    <path d="m9 18 6-6-6-6"></path>
+                </svg>
+                </div>
+            </div>
+            </div>
+
             </div>
 
             <!-- Segunda columna en cuadrícula -->

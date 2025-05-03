@@ -22,7 +22,7 @@
             <a
               href="#home"
               onclick="scrollToSection('#home')"
-              class="font-base hover:text-amber-300"
+              class="font-base hover:text-amber-400"
               >Home</a
             >
           </li>
@@ -30,7 +30,7 @@
             <a
               href="#about"
               onclick="scrollToSection('#about')"
-              class="font-base hover:text-amber-300"
+              class="font-base hover:text-amber-400"
               >About Us</a
             >
           </li>
@@ -38,7 +38,7 @@
             <a
               href="#features"
               onclick="scrollToSection('#features')"
-              class="font-base hover:text-amber-300"
+              class="font-base hover:text-amber-400"
               >Services</a
             >
           </li>
@@ -46,7 +46,7 @@
             <a
               href="#portfolio"
               onclick="scrollToSection('#portfolio')"
-              class="font-base hover:text-amber-300"
+              class="font-base hover:text-amber-400"
               >Portfolio</a
             >
           </li>
@@ -54,7 +54,7 @@
             <a
               href="#testi"
               onclick="scrollToSection('#testi')"
-              class="font-base hover:text-amber-300"
+              class="font-base hover:text-amber-400"
               >Review</a
             >
           </li>
@@ -62,7 +62,7 @@
             <a
               href="#pricing"
               onclick="scrollToSection('#pricing')"
-              class="font-base hover:text-amber-300"
+              class="font-base hover:text-amber-400"
               >Pricing</a
             >
           </li>
@@ -70,7 +70,7 @@
             <a
               href="#blog"
               onclick="scrollToSection('#blog')"
-              class="font-base hover:text-amber-300"
+              class="font-base hover:text-amber-400"
               >Blog</a
             >
           </li>
@@ -78,7 +78,7 @@
             <a
               href="#contact"
               onclick="scrollToSection('#contact')"
-              class="font-base hover:text-amber-300"
+              class="font-base hover:text-amber-400"
               >Contact Us</a
             >
           </li>
@@ -88,15 +88,15 @@
       <!-- Usuario -->
       <div class="flex items-center space-x-2">
         <a
-          href="#"
+          href="src/auth/Login"
           class="p-2 font-medium text-white hover:text-amber-300"
           >Conectarse</a
         >
-        <a
-          href="#"
+        <router-link
+          to="/auth/register"
           class="p-2 font-medium text-white hover:text-amber-300"
-          >Registrarse</a
-        >
+          >Registrarse
+        </router-link>
       </div>
     </div>
   </nav>
