@@ -1,6 +1,6 @@
 <template>
   <nav id="navbar" class="w-full bg-transparent absolute top-0 z-50">
-    <div class="container mx-auto flex flex-wrap items-center justify-between px-4 py-3">
+    <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between py-3">
       <!-- Botón de menú en móvil -->
       <button
         onclick="toggleMenu()"
@@ -13,7 +13,7 @@
       <!-- Menú -->
       <div
         id="menu-collapse"
-        class="hidden w-full lg:flex lg:w-auto mt-4 lg:mt-0"
+        class="hidden lg:flex lg:w-auto mt-4 lg:mt-0"
       >
         <ul
           class="flex flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0 text-white dark:text-gray-800"
@@ -101,6 +101,8 @@
     </div>
   </nav>
 </template>
+
+
 <script>
 
 export default {

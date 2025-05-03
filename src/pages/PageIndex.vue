@@ -7,7 +7,6 @@ import FooterSection from '../components/FooterSection.vue';
 </script>
 
 <template>
-
   <SectionOne />
   <SectionTwo />
   <SectionThree />

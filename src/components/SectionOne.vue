@@ -11,7 +11,7 @@
     >
       <div class="absolute inset-0 bg-black opacity-80"></div>
 
-      <div class="container relative pl-32">
+      <div class="max-w-screen-xl mx-auto relative">
         <div class="my-8">
           <Causa class="text-white" width="300" />
         </div>
