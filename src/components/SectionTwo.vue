@@ -13,7 +13,7 @@
 
             <!-- Contenedor padre con la clase group -->
             <div class="flex items-center justify-end w-fit">
-            <div class="group flex items-center cursor-pointer text-gray-700 text-md font-bold transition bg-yellow-300 hover:bg-amber-300 rounded-full px-4 py-2">
+            <div class="group flex items-center cursor-pointer text-gray-700 text-md font-bold transition bg-linear-to-bl from-yellow-400/90 to-yellow-500 hover:bg-gradient-to-bl hover:from-yellow-400/80 hover:to-yellow-500/90 rounded-full px-4 py-2">
                 <span class="transition duration-300">Ver más</span>
                 <div class="transition-transform transform duration-300 ml-1 group-hover:translate-x-2">
                 <svg

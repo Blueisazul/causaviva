@@ -22,7 +22,7 @@
             Lorem ipsum dolor sit amet,<br />consectetur adipiscing
             <a class="text-amber-300/90">
               <span
-                class="typewrite relative text-type-element"
+                class="typewrite relative text-type-element bg-gradient-to-bl from-yellow-400/90 to-yellow-500 bg-clip-text text-transparent py-1"
                 ref="typedText"
               ></span>
             </a>
