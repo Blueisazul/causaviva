@@ -2,7 +2,7 @@
   <div class="relative">
     <!-- Navbar dentro del fondo -->
     <NavbarSection class="absolute top-0 left-0 w-full" />
-    
+    <!-- comment -->
     <!-- Hero Start -->
     <section
       class="py-18 lg:py-36 w-full table relative bg-center bg-cover"
@@ -19,7 +19,7 @@
           <h4
             class="text-white lg:text-4xl text-3xl lg:leading-normal leading-normal font-medium mb-7 position-relative"
           >
-            Lorem ipsum dolor sit amet,<br />consectetur adipiscing
+            Lorem sit amet,<br />consectetur adipiscing
             <a class="text-amber-300/90">
               <span
                 class="typewrite relative text-type-element bg-gradient-to-bl from-yellow-400/90 to-yellow-500 bg-clip-text text-transparent py-1"
