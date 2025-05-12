@@ -2,13 +2,13 @@
     <div class="max-w-screen-xl mx-auto my-40">    
         <div class="flex flex-row w-full gap-6">
             <!-- Primera columna -->
-            <div class="w-1/2 flex flex-col justify-between my-20 pr-40">
-            <div class="text-gray-800 text-6xl font-semibold">
-                Lorem ipsum Alianzas
+            <div class="w-1/2 flex flex-col justify-between my-20 pr-20">
+            <div class="text-gray-800 text-5xl font-semibold">
+                Construyendo Alianzas para un Futuro Solidario
             </div>
 
             <div class="text-gray-700 text-lg font-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Colaboramos con organizaciones locales y nacionales para impulsar proyectos de voluntariado que transforman nuestra comunidad en Los Olivos. Juntos, creamos oportunidades de impacto real.
             </div>
 
             <!-- Contenedor padre con la clase group -->
@@ -44,17 +44,17 @@
 
             <!-- Arriba derecha -->
             <div class="flex items-end justify-start">
-                <img class="w-full h-auto rounded-2xl" src="https://placehold.co/270x236" />
+                <img class="w-full h-auto rounded-2xl" src="/src/assets/images/sectionTwo1.jpg" />
             </div>         
 
             <!-- Abajo izquierda -->
             <div>
-                <img class="w-full h-auto rounded-2xl" src="https://placehold.co/216x216" />
+                <img class="w-full h-auto rounded-2xl" src="/src/assets/images/sectionTwo2.jpg" />
             </div>
 
             <!-- Abajo derecha ("Crea+") -->
             <div class="flex items-end justify-end">
-                <div class="text-gray-800 text-8xl font-bold ">Crea+</div>
+                <div class="text-gray-800 text-7xl font-bold ">Juntos+</div>
             </div>
             </div>
         </div>

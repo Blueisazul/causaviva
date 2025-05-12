@@ -23,7 +23,7 @@
               href="#home"
               onclick="scrollToSection('#home')"
               class="font-base hover:text-amber-400"
-              >Home</a
+              >Inicio</a
             >
           </li>
           <li>
@@ -31,7 +31,7 @@
               href="#about"
               onclick="scrollToSection('#about')"
               class="font-base hover:text-amber-400"
-              >About Us</a
+              >Nosotros</a
             >
           </li>
           <li>
@@ -39,7 +39,7 @@
               href="#features"
               onclick="scrollToSection('#features')"
               class="font-base hover:text-amber-400"
-              >Services</a
+              >Logros</a
             >
           </li>
           <li>
@@ -47,10 +47,10 @@
               href="#portfolio"
               onclick="scrollToSection('#portfolio')"
               class="font-base hover:text-amber-400"
-              >Portfolio</a
+              >Contacto</a
             >
           </li>
-          <li>
+          <!-- <li>
             <a
               href="#testi"
               onclick="scrollToSection('#testi')"
@@ -81,17 +81,19 @@
               class="font-base hover:text-amber-400"
               >Contact Us</a
             >
-          </li>
+          </li> -->
         </ul>
       </div>
 
       <!-- Usuario -->
       <div class="flex items-center space-x-2">
-        <a
+        <!-- <a
           href="src/auth/Login"
           class="p-2 font-medium text-white hover:text-amber-300"
           >Conectarse</a
-        >
+        > -->
+        <Button label="Conectarse" style="color: #fff;"/>
+
         <router-link
           to="/auth/register"
           class="p-2 font-medium text-white hover:text-amber-300"

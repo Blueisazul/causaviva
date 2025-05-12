@@ -19,7 +19,7 @@
           <h4
             class="text-white lg:text-4xl text-3xl lg:leading-normal leading-normal font-medium mb-7 position-relative"
           >
-            Lorem sit amet,<br />consectetur adipiscing
+            Conectando a los voluntarios con las <br> oportunidades que transforman <br> Los Olivos.
             <a class="text-amber-300/90">
               <span
                 class="typewrite relative text-type-element bg-gradient-to-bl from-yellow-400/90 to-yellow-500 bg-clip-text text-transparent py-1"
@@ -62,10 +62,10 @@ export default {
     setupTyped() {
       const options = {
         strings: [
-          'despierta conciencias',
-          'cambia destinos',
-          'inspira futuros',
-          'construye un legado',
+          '¡Sé parte del cambio!',
+          '¡Cambia destinos!',
+          '¡Inspira futuros!',
+          '¡Construye un legado!',
         ],
         typeSpeed: 50,
         backSpeed: 30,
