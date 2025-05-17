@@ -55,7 +55,7 @@ const sponsorsDoubled = [...sponsors, ...sponsors];
 
 <template>
   <section id="sponsors" class="px-5">
-    <h2 class="text-lg md:text-xl text-center mb-6">Platinum Sponsors2</h2>
+    <h2 class="text-lg md:text-xl text-center mb-6">Platinum Sponsors</h2>
     <div class="overflow-hidden w-full">
       <div class="carousel-track flex gap-[3rem]">
         <div
