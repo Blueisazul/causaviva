@@ -22,72 +22,35 @@
             <a
               href="#home"
               onclick="scrollToSection('#home')"
-<<<<<<< HEAD
               class="font-medium hover:text-amber-400"
               >Home</a
-=======
-              class="font-base hover:text-amber-400"
-              >Inicio</a
->>>>>>> 986b609e9e9c707e223ede14b6a827c043b23ae5
             >
           </li>
           <li>
             <a
               href="#SectionTwo.vue"
               onclick="scrollToSection('#about')"
-<<<<<<< HEAD
               class="font-medium hover:text-amber-400"
               >Alianzas</a
-=======
-              class="font-base hover:text-amber-400"
-              >Nosotros</a
->>>>>>> 986b609e9e9c707e223ede14b6a827c043b23ae5
             >
           </li>
           <li>
             <a
               href="#SectionTwo"
               onclick="scrollToSection('#features')"
-<<<<<<< HEAD
               class="font-medium hover:text-amber-400"
               >Propuestas</a
-=======
-              class="font-base hover:text-amber-400"
-              >Logros</a
->>>>>>> 986b609e9e9c707e223ede14b6a827c043b23ae5
             >
           </li>
           <li>
             <a
               href="#portfolio"
               onclick="scrollToSection('#portfolio')"
-<<<<<<< HEAD
               class="font-medium hover:text-amber-400"
               >Nosotros</a
-=======
-              class="font-base hover:text-amber-400"
-              >Contacto</a
->>>>>>> 986b609e9e9c707e223ede14b6a827c043b23ae5
-            >
-          </li>
-          <!-- <li>
-            <a
-              href="#testi"
-              onclick="scrollToSection('#testi')"
-              class="font-medium hover:text-amber-400"
-              >Descubre</a
             >
           </li>
           <li>
-            <a
-              href="#pricing"
-              onclick="scrollToSection('#pricing')"
-              class="font-medium hover:text-amber-400"
-              >Contactanos</a
-            >
-          </li>
-          <li>
-<<<<<<< HEAD
             <a href="#Portafolio" class="cursor-pointer hover:text-amber-400">
               <svg  xmlns="http://www.w3.org/2000/svg" 
                     width="24" 
@@ -102,47 +65,19 @@
                     <path d="M11 20H2"/><path d="M11 4.562v16.157a1 1 0 0 0 1.242.97L19 20V5.562a2 2 0 0 0-1.515-1.94l-4-1A2 2 0 0 0 11 4.561z"/><path d="M11 4H8a2 2 0 0 0-2 2v14"/><path d="M14 12h.01"/><path d="M22 20h-3"/></svg>
             </a>
           </li>
-=======
-            <a
-              href="#blog"
-              onclick="scrollToSection('#blog')"
-              class="font-base hover:text-amber-400"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact"
-              onclick="scrollToSection('#contact')"
-              class="font-base hover:text-amber-400"
-              >Contact Us</a
-            >
-          </li> -->
->>>>>>> 986b609e9e9c707e223ede14b6a827c043b23ae5
         </ul>
       </div>
 
       <!-- Usuario -->
       <div class="flex items-center space-x-2">
-        <!-- <a
+        <a
           href="src/auth/Login"
-<<<<<<< HEAD
           class="p-2 font-medium text-white hover:text-amber-400"
           >Conectarse
         </a>
         <a
           href="/auth/register"
           class="p-2 font-medium text-white hover:text-amber-400"
-=======
-          class="p-2 font-medium text-white hover:text-amber-300"
-          >Conectarse</a
-        > -->
-        <Button label="Conectarse" style="color: #fff;"/>
-
-        <router-link
-          to="/auth/register"
-          class="p-2 font-medium text-white hover:text-amber-300"
->>>>>>> 986b609e9e9c707e223ede14b6a827c043b23ae5
           >Registrarse
         </a>
       </div>
