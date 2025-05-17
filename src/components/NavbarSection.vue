@@ -4,7 +4,7 @@
       <!-- Botón de menú en móvil -->
       <button
         onclick="toggleMenu()"
-        class="lg:hidden text-white dark:text-gray-800 focus:outline-none"
+        class="lg:hidden text-white dark:text-gray-800 focus:outline-none px-4"
       >
         <span class="sr-only">Abrir menú</span>
         ☰
@@ -22,65 +22,64 @@
             <a
               href="#home"
               onclick="scrollToSection('#home')"
-              class="font-base hover:text-amber-400"
+              class="font-medium hover:text-amber-400"
               >Home</a
             >
           </li>
           <li>
             <a
-              href="#about"
+              href="#SectionTwo.vue"
               onclick="scrollToSection('#about')"
-              class="font-base hover:text-amber-400"
-              >About Us</a
+              class="font-medium hover:text-amber-400"
+              >Alianzas</a
             >
           </li>
           <li>
             <a
-              href="#features"
+              href="#SectionTwo"
               onclick="scrollToSection('#features')"
-              class="font-base hover:text-amber-400"
-              >Services</a
+              class="font-medium hover:text-amber-400"
+              >Propuestas</a
             >
           </li>
           <li>
             <a
               href="#portfolio"
               onclick="scrollToSection('#portfolio')"
-              class="font-base hover:text-amber-400"
-              >Portfolio</a
+              class="font-medium hover:text-amber-400"
+              >Nosotros</a
             >
           </li>
           <li>
             <a
               href="#testi"
               onclick="scrollToSection('#testi')"
-              class="font-base hover:text-amber-400"
-              >Review</a
+              class="font-medium hover:text-amber-400"
+              >Descubre</a
             >
           </li>
           <li>
             <a
               href="#pricing"
               onclick="scrollToSection('#pricing')"
-              class="font-base hover:text-amber-400"
-              >Pricing</a
+              class="font-medium hover:text-amber-400"
+              >Contactanos</a
             >
           </li>
           <li>
-            <a
-              href="#blog"
-              onclick="scrollToSection('#blog')"
-              class="font-base hover:text-amber-400"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact"
-              onclick="scrollToSection('#contact')"
-              class="font-base hover:text-amber-400"
-              >Contact Us</a
-            >
+            <a href="#Portafolio" class="cursor-pointer hover:text-amber-400">
+              <svg  xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    stroke-width="2" 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    class="lucide lucide-door-open-icon lucide-door-open">
+                    <path d="M11 20H2"/><path d="M11 4.562v16.157a1 1 0 0 0 1.242.97L19 20V5.562a2 2 0 0 0-1.515-1.94l-4-1A2 2 0 0 0 11 4.561z"/><path d="M11 4H8a2 2 0 0 0-2 2v14"/><path d="M14 12h.01"/><path d="M22 20h-3"/></svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -89,14 +88,14 @@
       <div class="flex items-center space-x-2">
         <a
           href="src/auth/Login"
-          class="p-2 font-medium text-white hover:text-amber-300"
-          >Conectarse</a
-        >
-        <router-link
-          to="/auth/register"
-          class="p-2 font-medium text-white hover:text-amber-300"
+          class="p-2 font-medium text-white hover:text-amber-400"
+          >Conectarse
+        </a>
+        <a
+          href="/auth/register"
+          class="p-2 font-medium text-white hover:text-amber-400"
           >Registrarse
-        </router-link>
+        </a>
       </div>
     </div>
   </nav>

@@ -5,7 +5,7 @@
     
     <!-- Hero Start -->
     <section
-      class="py-18 lg:py-36 w-full table relative bg-center bg-cover"
+      class="py-26 lg:py-52 w-full table relative bg-center bg-cover"
       :style="{ backgroundImage: `url(${bgindexone})` }"
       id="home"
     >
@@ -19,7 +19,7 @@
           <h4
             class="text-white lg:text-4xl text-3xl lg:leading-normal leading-normal font-medium mb-7 position-relative"
           >
-            Lorem ipsum dolor sit amet,<br />consectetur adipiscing
+            Tienes el poder de cambiar vidas,<br />transformar realidades y
             <a class="text-amber-300/90">
               <span
                 class="typewrite relative text-type-element bg-gradient-to-bl from-yellow-400/90 to-yellow-500 bg-clip-text text-transparent py-1"
@@ -62,10 +62,10 @@ export default {
     setupTyped() {
       const options = {
         strings: [
-          'despierta conciencias',
-          'cambia destinos',
-          'inspira futuros',
-          'construye un legado',
+          'despertar conciencias',
+          'cambiar destinos',
+          'inspirar futuros',
+          'crear oportunidades',
         ],
         typeSpeed: 50,
         backSpeed: 30,
