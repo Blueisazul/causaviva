@@ -7,12 +7,7 @@
         class="w-full bg-linear-to-bl from-yellow-400/90 to-yellow-500 shadow-md rounded-4xl p-6 flex content-between mb-8 transition-all duration-300 hover:bg-gradient-to-bl hover:from-yellow-400/80 hover:to-yellow-500/90">
         <div class="px-6 py-4 justify-between h-full">
           <h2 class="text-4xl font-semibold text-gray-800">Escríbenos</h2>
-          <p class="text-gray-700 text-md py-6">En CausaViva estamos emocionados de saber sobre
-            y cómo podemos trabajar juntos para hacer un
-            cambio real. Si tienes preguntas, deseas más información sobre nuestros proyectos de
-            voluntariado o simplemente quieres unirte a
-            nuestra causa, ¡no dudes en ponerte en contacto
-            con nosotros!</p>
+          <p class="text-gray-700 text-md py-6">Juntos podemos cambiar realidades. Si deseas sumarte a esta causa, estamos listos para escucharte.</p>
           <div class="py-6">
             <div
               class="top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent from-10% via-gray-700 to-transparent to-90%">
