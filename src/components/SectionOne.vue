@@ -2,7 +2,7 @@
   <div class="relative">
     <!-- Navbar dentro del fondo -->
     <NavbarSection class="absolute top-0 left-0 w-full" />
-    
+    <!-- comment -->
     <!-- Hero Start -->
     <section
       class="py-26 lg:py-52 w-full table relative bg-center bg-cover"
@@ -19,7 +19,11 @@
           <h4
             class="text-white lg:text-4xl text-3xl lg:leading-normal leading-normal font-medium mb-7 position-relative"
           >
+<<<<<<< HEAD
             Tienes el poder de cambiar vidas,<br />transformar realidades y
+=======
+            Conectando a los voluntarios con las <br> oportunidades que transforman <br> Los Olivos.
+>>>>>>> 986b609e9e9c707e223ede14b6a827c043b23ae5
             <a class="text-amber-300/90">
               <span
                 class="typewrite relative text-type-element bg-gradient-to-bl from-yellow-400/90 to-yellow-500 bg-clip-text text-transparent py-1"
@@ -62,10 +66,17 @@ export default {
     setupTyped() {
       const options = {
         strings: [
+<<<<<<< HEAD
           'despertar conciencias',
           'cambiar destinos',
           'inspirar futuros',
           'crear oportunidades',
+=======
+          '¡Sé parte del cambio!',
+          '¡Cambia destinos!',
+          '¡Inspira futuros!',
+          '¡Construye un legado!',
+>>>>>>> 986b609e9e9c707e223ede14b6a827c043b23ae5
         ],
         typeSpeed: 50,
         backSpeed: 30,

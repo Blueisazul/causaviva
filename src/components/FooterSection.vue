@@ -17,7 +17,7 @@ export default {
                     <Causa class="text-gray-800" width="100" />
                 </div>
                 <p class="mt-2 text-gray-700 ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit urna diam celerat, semper consequat nulla at, sceler 2025.
+                    Conectando a los voluntarios con las oportunidades que transforman Los Olivos. ¡Sé parte del cambio!
                 </p>
                 <div class="flex text-sm font-medium space-x-4 mt-4">
                     <!-- Facebook -->
@@ -43,11 +43,11 @@ export default {
             <div>
             <h3 class="text-xl text-gray-800">Enlaces Rápidos</h3>
             <ul class="mt-4 space-y-2 text-gray-700">
+                <li><a href="#" class="hover:text-amber-400">Inicio</a></li>
                 <li><a href="#" class="hover:text-amber-400">Sobre Nosotros</a></li>
-                <li><a href="#" class="hover:text-amber-400">Alianzas Lorem</a></li>
-                <li><a href="#" class="hover:text-amber-400">Quisque congue</a></li>
-                <li><a href="#" class="hover:text-amber-400">Lorem ipsumdolo</a></li>
-                <li><a href="#" class="hover:text-amber-400">Nullam egestas</a></li>
+                <li><a href="#" class="hover:text-amber-400">Logros</a></li>
+                <li><a href="#" class="hover:text-amber-400">Escribenos</a></li>
+                <!-- <li><a href="#" class="hover:text-amber-400">Nullam egestas</a></li> -->
             </ul>
             </div>
         
@@ -59,12 +59,12 @@ export default {
                 <div class="text-gray-700 content-center -ml-1 mr-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
-                Av. Alfredo Mendiola 6062</li>
+                Los Olivos, Perú, 2025</li>
                 <li class="flex items-center">
                 <div class="text-gray-700 content-center -ml-1 mr-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
-                +1 (555) 123-4567</li>
+                +51 963 073 599</li>
                 <li class="flex items-center">
                 <div class="text-gray-700 content-center -ml-1 mr-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
@@ -77,7 +77,7 @@ export default {
             <div>
             <h3 class="text-xl text-gray-800">Suscríbete</h3>
             <p class="mt-2 text-gray-700">
-                Recibe promociones y novedades exclusivas en tu correo.
+                Recibe informacion y opciones exclusivas en tu correo.
             </p>
             <form class="mt-4 flex">
                 <input
