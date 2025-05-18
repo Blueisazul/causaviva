@@ -2,8 +2,9 @@
     <div class="max-w-screen-xl mx-auto py-20 my-40">
         <!-- Imagen destacada con texto y botón superpuestos -->
         <div class="relative rounded-2xl overflow-hidden my-10">
-            <img class="w-full h-auto object-cover" src="https://placehold.co/1920x600" alt="Banner" />
-            <div class="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center text-center text-white z-10 px-20">
+            <img class="w-full object-cover w-full h-90" src="/src/assets/images/bgindexone.jpg" alt="Banner" />
+            <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 px-20">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 my-20 mx-30">Lorem ipsum dolor sit amet adipisicing elit. Quisquam, voluptatibus.</h2>
                 <div class="flex items-center justify-end w-fit">
                     <div class="group flex items-center cursor-pointer text-gray-700 text-md font-bold transition bg-linear-to-bl from-yellow-400/90 to-yellow-500 hover:bg-gradient-to-bl hover:from-yellow-400/80 hover:to-yellow-500/90 rounded-full px-4 py-2">
