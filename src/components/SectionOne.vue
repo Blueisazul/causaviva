@@ -64,7 +64,7 @@ export default {
         strings: [
           'despertar conciencias',
           'cambiar destinos',
-          'inspirar futuros',
+          'crear futuros',
           'crear oportunidades',
         ],
         typeSpeed: 50,
