@@ -20,14 +20,6 @@
         >
           <li>
             <a
-              href="#home"
-              onclick="scrollToSection('#home')"
-              class="font-medium hover:text-amber-400"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
               href="#alianzas"
               @click.prevent="ScrollIntoView('#alianzas')"
               class="font-medium hover:text-amber-400"
@@ -48,6 +40,14 @@
               @click.prevent="ScrollIntoView('#nosotros')"
               class="font-medium hover:text-amber-400"
               >Nosotros</a
+            >
+          </li>
+          <li>
+            <a
+              href="#actividades"
+              @click.prevent="ScrollIntoView('#actividades')"
+              class="font-medium hover:text-amber-400"
+              >Actividades</a
             >
           </li>
           <li>

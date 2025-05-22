@@ -14,7 +14,7 @@ import FooterSection from '../components/FooterSection.vue';
   <SectionTwo id="alianzas"/>
   <SectionThree id="propuestas"/>
   <SectionFour id="nosotros"/>
-  <SectionFive />
+  <SectionFive id="actividades"/>
   <SectionSix id="contacto"/>
 
   <FooterSection />
