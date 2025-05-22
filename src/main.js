@@ -4,11 +4,13 @@ import App from './App.vue'
 import PrimeVue from 'primevue/config';
 import Componentes from './primevue';
 import 'primeicons/primeicons.css';
+import router from './router'
 
 // createApp(App).mount('#app')
 
 const app = createApp(App);
 app.use(PrimeVue);
+app.use(router);
 
 Object.entries(Componentes).forEach(([name, component]) => {
   app.component(name, component);

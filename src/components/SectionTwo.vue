@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-screen-xl mx-auto my-50">    
+    <div class="max-w-screen-xl mx-auto py-30 my-20">    
         <div class="flex flex-row w-full gap-6">
             <!-- Primera columna -->
             <div class="w-1/2 flex flex-col justify-between my-20 pr-40">
@@ -17,7 +17,12 @@
 
                 <!-- Contenedor padre con la clase group -->
                 <div class="flex items-center justify-end w-fit">
-                    <div class="group flex items-center cursor-pointer text-gray-700 text-md font-bold transition bg-linear-to-bl from-yellow-400/90 to-yellow-500 hover:bg-gradient-to-bl hover:from-yellow-400/80 hover:to-yellow-500/90 rounded-full px-4 py-2">
+                    <a
+                        href="https://creamas.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="group flex items-center cursor-pointer text-gray-700 text-md font-bold transition bg-linear-to-bl from-yellow-400/90 to-yellow-500 hover:bg-gradient-to-bl hover:from-yellow-400/80 hover:to-yellow-500/90 rounded-full px-4 py-2"
+                    >
                         <span class="transition duration-300">Ver más</span>
                         <div class="transition-transform transform duration-300 ml-1 group-hover:translate-x-2">
                             <svg
@@ -28,15 +33,20 @@
                                 <path d="m9 18 6-6-6-6"></path>
                             </svg>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 
             <!-- Segunda columna en cuadrícula -->
             <div class="w-1/2 grid grid-cols-2 grid-rows-2 gap-4">
-                <!-- Arriba izquierda -->
+                <!-- Boton Vidas Tocadas -->
                 <div class="flex flex-col justify-end items-end m-4">
-                    <div class="cursor-pointer w-36 h-36 transition bg-linear-to-bl from-yellow-400/90 to-yellow-500 hover:bg-gradient-to-bl hover:from-yellow-400/80 hover:to-yellow-500/90 rounded-2xl p-4 flex flex-col justify-between items-end group">
+                    <a
+                        href="https://creamas.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="cursor-pointer w-36 h-36 transition bg-linear-to-bl from-yellow-400/90 to-yellow-500 hover:bg-gradient-to-bl hover:from-yellow-400/80 hover:to-yellow-500/90 rounded-2xl p-4 flex flex-col justify-between items-end group"
+                    >
                         <div class="flex items-center text-neutral-800 transition-transform transform duration-400 group-hover:translate-x-2 group-hover:-translate-y-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right-icon lucide-arrow-up-right">
                                 <path d="M7 7h10v10"/>
@@ -50,7 +60,7 @@
                             </div>
                             <div class="text-neutral-800 text-md font-semibold">Vidas Tocadas</div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Arriba derecha -->
