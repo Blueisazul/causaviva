@@ -4,12 +4,19 @@
     <NavbarSection class="absolute top-0 left-0 w-full" />
     <!-- comment -->
     <!-- Hero Start -->
-    <section
-      class="py-26 lg:py-52 w-full table relative bg-center bg-cover"
-      :style="{ backgroundImage: `url(${bgindexone})` }"
-      id="home"
-    >
-      <div class="absolute inset-0 bg-black opacity-80"></div>
+    <section class="py-28 lg:py-56 w-full table relative bg-center bg-cover" id="home">
+      <!-- Imagen de fondo -->
+      <video
+        src="/src/assets/videos/vbanner1.mp4"
+        class="w-full h-full object-cover absolute inset-0 z-0"
+        alt="home"
+        autoplay
+        loop
+        muted
+        playsinline
+      ></video>
+
+      <div class="absolute inset-0 bg-black opacity-60"></div>
 
       <div class="max-w-screen-xl mx-auto relative">
         <div class="my-8">

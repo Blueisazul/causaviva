@@ -28,38 +28,38 @@
           </li>
           <li>
             <a
-              href="#SectionTwo.vue"
-              onclick="scrollToSection('#about')"
+              href="#alianzas"
+              @click.prevent="ScrollIntoView('#alianzas')"
               class="font-medium hover:text-amber-400"
               >Alianzas</a
             >
           </li>
           <li>
             <a
-              href="#SectionTwo"
-              onclick="scrollToSection('#features')"
+              href="#propuestas"
+              @click.prevent="ScrollIntoView('#propuestas')"
               class="font-medium hover:text-amber-400"
               >Propuestas</a
             >
           </li>
           <li>
             <a
-              href="#portfolio"
-              onclick="scrollToSection('#portfolio')"
+              href="#nosotros"
+              @click.prevent="ScrollIntoView('#nosotros')"
               class="font-medium hover:text-amber-400"
               >Nosotros</a
             >
           </li>
           <li>
             <a
-              href="#Contactanos"
-              onclick="scrollToSection('#Contactanos')"
+              href="#contacto"
+              @click.prevent="ScrollIntoView('#contacto')"
               class="font-medium hover:text-amber-400"
               >Contactanos</a
             >
           </li>          
           <li>
-            <a href="#Portafolio" class="cursor-pointer hover:text-amber-400">
+            <a href="#Portafolio.vue" class="cursor-pointer hover:text-amber-400">
               <svg  xmlns="http://www.w3.org/2000/svg" 
                     width="24" 
                     height="24" 

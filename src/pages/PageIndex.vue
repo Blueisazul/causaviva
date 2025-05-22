@@ -11,11 +11,11 @@ import FooterSection from '../components/FooterSection.vue';
 
 <template>
   <SectionOne />
-  <SectionTwo />
-  <SectionThree />
-  <SectionFour />
+  <SectionTwo id="alianzas"/>
+  <SectionThree id="propuestas"/>
+  <SectionFour id="nosotros"/>
   <SectionFive />
-  <SectionSix />
+  <SectionSix id="contacto"/>
 
   <FooterSection />
 </template>
