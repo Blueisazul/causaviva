@@ -63,7 +63,7 @@
         >
           <div class="relative">
             <img
-              src="/src/assets/images/ban1.jpg"
+              :src="vol.imagen"
               alt="Voluntariado"
               class="w-full h-48 object-cover"
             />
@@ -83,27 +83,34 @@
                     </svg>
               </span>
             </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-2">
+            <h3 class="text-lg font-semibold text-gray-900 leading-tight">
               {{ vol.titulo }}
             </h3>
-            <p class="text-gray-600 mb-4">
+            <p class="text-sm text-gray-500 line-clamp-2">
               {{ vol.descripcion }}
             </p>
 
-            <div class="flex items-center text-gray-500 mb-4">
-              <i class="fas fa-calendar-alt mr-2"></i>
-              <span>
+            <div class="pt-2 flex flex-wrap items-center gap-y-1 gap-x-3 text-xs text-gray-500">
+              <span class="flex items-center">
+                <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
                 {{ formatDate(vol.fechas.inicio) }} - {{ formatDate(vol.fechas.fin) }} ({{ vol.fechas.duracion }})
               </span>
             </div>
 
-            <div class="flex items-center text-gray-500 mb-4">
-              <i class="fas fa-map-marker-alt mr-2"></i>
-              <span>{{ vol.detalles.ubicacion }}</span>
+            <div class="pt-2 flex flex-wrap items-center gap-y-1 gap-x-3 text-xs text-gray-500">
+              <span class="flex items-center">
+                <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                {{ vol.detalles.ubicacion }}
+              </span>
             </div>
 
-            <div class="mb-4">
-              <div class="flex justify-between text-sm text-gray-600 mb-1">
+            <div class="pt-2">
+              <div class="flex justify-between text-xs text-gray-500 mb-1">
                 <span>{{ vol.estadisticas.voluntarios_inscritos }} voluntarios</span>
                 <span>
                   {{  
@@ -113,9 +120,9 @@
                   }}% completado
                 </span>
               </div>
-              <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="w-full bg-gray-200 rounded-full h-1.5">
                 <div
-                  class="bg-amber-400 h-2 rounded-full"
+                  class="bg-green-500 h-1.5 rounded-full"
                   :style="{ width: ((vol.estadisticas.voluntarios_inscritos / vol.estadisticas.voluntarios_requeridos) * 100) + '%' }"
                 ></div>
               </div>
@@ -178,7 +185,7 @@ export default {
         {
           id: 1,
           titulo: "Apoyo escolar en zonas rurales",
-          imagen: "/src/imagenes/ban1.jpg",
+          imagen: "/imagenes/ban1.jpg",
           organizacion: {
             nombre: "Unicef",
             verificada: true
@@ -203,7 +210,7 @@ export default {
         {
           id: 2,
           titulo: "Apoyo escolar en zonas rurales",
-          imagen: "/src/imagenes/ban1.jpg",
+          imagen: "/imagenes/ban2.jpg",
           organizacion: {
             nombre: "Proa",
             verificada: true
@@ -228,7 +235,7 @@ export default {
         {
           id: 3,
           titulo: "Apoyo escolar en zonas rurales",
-          imagen: "/src/imagenes/ban1.jpg",
+          imagen: "/imagenes/ban1.jpg",
           organizacion: {
             nombre: "Crea+",
             verificada: true
@@ -253,7 +260,7 @@ export default {
         {
           id: 4,
           titulo: "Apoyo escolar en zonas rurales",
-          imagen: "/src/imagenes/ban1.jpg",
+          imagen: "/imagenes/ban1.jpg",
           organizacion: {
             nombre: "Destellos",
             verificada: false
@@ -278,7 +285,7 @@ export default {
         {
           id: 5,
           titulo: "Apoyo escolar en zonas rurales",
-          imagen: "/src/imagenes/ban1.jpg",
+          imagen: "/imagenes/ban2.jpg",
           organizacion: {
             nombre: "Destellos",
             verificada: false
@@ -303,7 +310,7 @@ export default {
         {
           id: 6,
           titulo: "Apoyo escolar en zonas rurales",
-          imagen: "/src/imagenes/ban1.jpg",
+          imagen: "/imagenes/ban1.jpg",
           organizacion: {
             nombre: "ONG Astaletum",
             verificada: false

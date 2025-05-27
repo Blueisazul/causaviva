@@ -5,7 +5,7 @@
     <!-- Video principal (2/3) - Con más interacción -->
     <div class="basis-2/3 relative overflow-hidden rounded-xl group">
       <video
-        src="/src/assets/videos/vbanner4.mp4"
+        src="/videos/vbanner4.mp4"
         class="w-full h-full object-cover"
         autoplay
         loop
@@ -38,7 +38,7 @@
     <!-- Video secundario (1/3) - Animación moderna -->
     <div class="basis-1/3 relative overflow-hidden rounded-xl group">
       <video
-        src="/src/assets/videos/vbanner2.mp4"
+        src="/videos/vbanner2.mp4"
         class="w-full h-full object-cover"
         autoplay
         loop
@@ -68,7 +68,7 @@
     <!-- Video terciario (1/4) - Manteniendo tu animación favorita -->
     <div class="basis-1/4 relative overflow-hidden rounded-xl group">
       <video
-        src="/src/assets/videos/vbanner3.mp4"
+        src="/videos/vbanner3.mp4"
         class="w-full h-full object-cover"
         autoplay
         loop
@@ -93,7 +93,7 @@
     <!-- Video destacado (3/4) -->
     <div class="basis-3/4 relative overflow-hidden rounded-xl group">
       <video
-        src="/src/assets/videos/vbanner1.mp4"
+        src="/videos/vbanner1.mp4"
         class="w-full h-full object-cover"
         autoplay
         loop
