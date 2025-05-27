@@ -129,7 +129,7 @@
             </div>
 
             <RouterLink
-              to="/catalogedetalle"
+              to="/portafolio/detalle"
               class="block w-full bg-amber-500 text-white text-center py-2 rounded-lg hover:bg-amber-700 transition"
             >
               Ver detalles
