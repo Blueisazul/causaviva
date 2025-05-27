@@ -2,7 +2,7 @@
 <div class="relative">
   <section
     class="py-9 lg:py-35 w-full table relative bg-center bg-cover"
-    :style="{ backgroundImage: `url(${pasillo})` }"
+    :style="{ backgroundImage: `url('/causaviva/imagenes/pasillo.jpg')` }"
     id="home"
   >
     <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -21,7 +21,7 @@
             <div class="w-full rounded-xl">
               <img
                 class="h-55 w-100 object-cover rounded-xl"
-                src="/src/assets/images/visita.jpg"
+                src="/public/images/visita.jpg"
                 alt="Voluntarios de Causa Viva compartiendo con adultos mayores"
               />
             </div>
@@ -110,21 +110,17 @@
 </div></template>
 
 <script>
-import pasillo from "../assets/images/pasillo.jpg";
+// No importes imágenes de public
 
 export default {
   name: "SectionFive",
-  data() {
-    return {
-      pasillo,
-    };
-  },
+  // Elimina la propiedad 'pasillo' del data
   mounted() {
     const countUpElements = document.querySelectorAll('.count-up');
     
     const animateCountUp = (element) => {
       const target = parseInt(element.getAttribute('data-target'));
-      const duration = 4000; // 2 segundos
+      const duration = 4000; // 4 segundos
       const stepTime = 30; // ms por paso
       const steps = duration / stepTime;
       const increment = target / steps;

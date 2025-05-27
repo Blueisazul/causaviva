@@ -7,7 +7,7 @@
     <section class="py-28 lg:py-56 w-full table relative bg-center bg-cover" id="home">
       <!-- Imagen de fondo -->
       <video
-        src="/src/assets/videos/vbanner1.mp4"
+        src="/public/videos/vbanner1.mp4"
         class="w-full h-full object-cover absolute inset-0 z-0"
         alt="home"
         autoplay
@@ -44,7 +44,7 @@
 <script>
 import NavbarSection from '../components/NavbarSection.vue';
 import FooterSection from '../components/FooterSection.vue';
-import bgindexone from '../assets/images/bgindexone.jpg';
+import bgindexone from '/public/images/bgindexone.jpg';
 import Causa from '../icons/Causa.vue';
 import Typed from 'typed.js';
 
