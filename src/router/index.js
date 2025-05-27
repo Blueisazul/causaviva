@@ -3,10 +3,12 @@ import PageIndex from '../pages/PageIndex.vue'
 import Portafolio from '../pages/Portafolio.vue'
 import Login from '../pages/auth/Login.vue'
 import Register from '../pages/auth/Register.vue'
+import CatalogeDetalle from '../components/CatalogeDetalle.vue'
 
 const routes = [
   { path: '/', component: PageIndex },
   { path: '/portafolio', component: Portafolio },
+  { path: '/portafolio/detalle', component: CatalogeDetalle },
   { path: '/login', component: Login },
   { path: '/register', component: Register }
 ]

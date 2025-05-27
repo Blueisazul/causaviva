@@ -1,15 +1,19 @@
 <script setup>
+import FooterSection from "../components/FooterSection.vue";
+import NavbarUsuario from "../components/NavbarUsuario.vue";
+import Cataloge from "../components/Cataloge.vue";
 
 
-import FooterSection from '../components/FooterSection.vue';
 </script>
 
 <template>
-    <h1 class="text-center text-neutral-800 text-lg py-2 bg-amber-400 ">Poner Navbar Usuario</h1>
-  
+  <div class="bg-gradient-to-r from-gray-50 to-slate-100 min-h-screen">
+    <NavbarUsuario />
+
+    <Cataloge />
+    
     <FooterSection />
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
