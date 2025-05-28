@@ -6,7 +6,7 @@
   />
   <div class="pt-20">
     <!-- Filtros -->
-    <div class="py-8">
+    <div class="py-8 px-10">
       <div class="flex flex-wrap gap-4 justify-between items-center">
         <select
           class="bg-white border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400"
@@ -53,12 +53,12 @@
     </div>
   </div>
   <!-- Listado de Voluntariados -->
-  <div class="py-8">
+  <div class="py-8 px-10">
     <h2 class="text-2xl font-bold text-gray-800 mb-6">
       Voluntariados disponibles
     </h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-18">
       <!-- Cards generadas dinámicamente -->
       <div v-for="vol in voluntariados" :key="vol.id" class="overflow-hidden">
         <div class="relative">
@@ -284,7 +284,7 @@ export default {
         {
           id: 3,
           titulo: "Apoyo escolar en zonas rurales",
-          imagen: "/causaviva/imagenes/ban1.jpg",
+          imagen: "/causaviva/imagenes/crea2.jpg",
           organizacion: {
             nombre: "Crea+",
             verificada: true,
@@ -310,7 +310,7 @@ export default {
         {
           id: 4,
           titulo: "Apoyo escolar en zonas rurales",
-          imagen: "/causaviva/imagenes/ban1.jpg",
+          imagen: "/causaviva/imagenes/pasillo.jpg",
           organizacion: {
             nombre: "Destellos",
             verificada: false,
@@ -384,6 +384,84 @@ export default {
             voluntarios_inscritos: 26,
           },
           enlace: "/voluntariado/6",
+        },
+        {
+          id: 7,
+          titulo: "Reforestación urbana",
+          imagen: "/causaviva/imagenes/ban1.jpg",
+          organizacion: {
+            nombre: "EcoVida",
+            verificada: true,
+          },
+          descripcion:
+            "Participa en jornadas de plantación de árboles y recuperación de áreas verdes en la ciudad.",
+          fechas: {
+            inicio: "2025-04-01",
+            fin: "2025-07-01",
+            duracion: "3 meses",
+          },
+          detalles: {
+            ubicacion: "Arequipa, Perú",
+            modalidad: "presencial",
+            categoria: "Medio Ambiente",
+          },
+          estadisticas: {
+            voluntarios_requeridos: 25,
+            voluntarios_inscritos: 18,
+          },
+          enlace: "/voluntariado/7",
+        },
+        {
+          id: 8,
+          titulo: "Voluntariado en comedor social",
+          imagen: "/causaviva/imagenes/visita.jpg",
+          organizacion: {
+            nombre: "Manos Solidarias",
+            verificada: false,
+          },
+          descripcion:
+            "Ayuda en la preparación y distribución de alimentos para personas en situación vulnerable.",
+          fechas: {
+            inicio: "2025-05-10",
+            fin: "2025-08-10",
+            duracion: "3 meses",
+          },
+          detalles: {
+            ubicacion: "Cusco, Perú",
+            modalidad: "presencial",
+            categoria: "Salud",
+          },
+          estadisticas: {
+            voluntarios_requeridos: 20,
+            voluntarios_inscritos: 12,
+          },
+          enlace: "/voluntariado/8",
+        },
+        {
+          id: 9,
+          titulo: "Talleres virtuales de inglés",
+          imagen: "/causaviva/imagenes/crea1.jpg",
+          organizacion: {
+            nombre: "Educando Juntos",
+            verificada: true,
+          },
+          descripcion:
+            "Imparte clases virtuales de inglés básico a niños y jóvenes de zonas rurales.",
+          fechas: {
+            inicio: "2025-06-01",
+            fin: "2025-09-01",
+            duracion: "3 meses",
+          },
+          detalles: {
+            ubicacion: "Virtual",
+            modalidad: "virtual",
+            categoria: "Educación",
+          },
+          estadisticas: {
+            voluntarios_requeridos: 15,
+            voluntarios_inscritos: 10,
+          },
+          enlace: "/voluntariado/9",
         },
       ],
     };
