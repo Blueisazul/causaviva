@@ -44,7 +44,7 @@
 <script>
 import NavbarSection from '../components/NavbarSection.vue';
 import FooterSection from '../components/FooterSection.vue';
-import bgindexone from '/public/images/bgindexone.jpg';
+import bgindexone from '/public/imagenes/bgindexone.jpg';
 import Causa from '../icons/Causa.vue';
 import Typed from 'typed.js';
 

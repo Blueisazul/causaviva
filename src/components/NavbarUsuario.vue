@@ -3,7 +3,7 @@
     <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between py-3">
       <!-- Botón de menú en móvil -->
       <button
-        onclick="toggleMenu()"
+        @click="toggleMenu"
         class="lg:hidden text-neutral-800 dark:text-white focus:outline-none px-4"
       >
         <span class="sr-only">Abrir menú</span>
@@ -14,50 +14,14 @@
       <div
         id="menu-collapse"
         class="hidden lg:flex lg:w-auto mt-4 lg:mt-0"
-      >
+      >         
+        <div class="">
+            <Causa class="text-gray-800" width="100" />
+        </div>
         <ul
           class="flex flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0 text-neutral-800 dark:text-white"
         >
-          <li>
-            <a
-              href="#alianzas"
-              @click.prevent="ScrollIntoView('#alianzas')"
-              class="font-medium hover:text-amber-400"
-              >Alianzas</a
-            >
-          </li>
-          <li>
-            <a
-              href="#propuestas"
-              @click.prevent="ScrollIntoView('#propuestas')"
-              class="font-medium hover:text-amber-400"
-              >Propuestas</a
-            >
-          </li>
-          <li>
-            <a
-              href="#nosotros"
-              @click.prevent="ScrollIntoView('#nosotros')"
-              class="font-medium hover:text-amber-400"
-              >Nosotros</a
-            >
-          </li>
-          <li>
-            <a
-              href="#actividades"
-              @click.prevent="ScrollIntoView('#actividades')"
-              class="font-medium hover:text-amber-400"
-              >Actividades</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contacto"
-              @click.prevent="ScrollIntoView('#contacto')"
-              class="font-medium hover:text-amber-400"
-              >Contactanos</a
-            >
-          </li>          
+
           <li>
             <router-link 
               to="/portafolio"
@@ -103,13 +67,12 @@
 
 
 <script>
+import Causa from '../icons/Causa.vue';
 
 export default {
-    name: 'NavbarSection',
-    data() {
-        return {
-            active: '#home'
-        }
+    name: 'SectionOne',
+    components: {
+        Causa,
     },
     created() {
         document.documentElement.classList.add('light');
@@ -129,7 +92,6 @@ export default {
             } else {
                 navbar.classList.remove("is-sticky");
             }
-
 
             var mybutton = document.getElementById("back-to-top");
             if (mybutton != null) {
@@ -155,5 +117,4 @@ export default {
         }
     }
 }
-
 </script>

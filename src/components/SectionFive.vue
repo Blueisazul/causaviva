@@ -21,7 +21,7 @@
             <div class="w-full rounded-xl">
               <img
                 class="h-55 w-100 object-cover rounded-xl"
-                src="/public/images/visita.jpg"
+                src="/public/imagenes/visita.jpg"
                 alt="Voluntarios de Causa Viva compartiendo con adultos mayores"
               />
             </div>
