@@ -12,7 +12,7 @@
       <!-- Contenido centrado con max-width -->
       <div class="max-w-screen-xl mx-auto relative z-10">
         <!-- Navbar -->
-        <nav class="flex items-center justify-between w-full px-4 lg:px-0 py-3">
+        <nav class="flex items-center justify-between w-full px-4 lg:px-0 pt-10">
           <!-- Logo -->
           <div class="flex-shrink-0">
             <Causa class="text-gray-100" width="100" /> <!-- Cambié a texto claro -->
