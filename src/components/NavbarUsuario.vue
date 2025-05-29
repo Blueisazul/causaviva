@@ -1,54 +1,60 @@
 <template>
-  <div class="max-w-screen-xl mx-auto flex flex-col items-center justify-between py-3">
-    <!-- Navbar -->
-    <nav class="flex flex-row items-center justify-between w-full lg:w-auto mb-8">
-      <div class="flex items-center justify-between w-full lg:w-auto">
-        <!-- Logo -->
-        <div class="ml-4 lg:ml-0">
-          <Causa class="text-gray-800" width="100" />
-        </div>
+  <div class="flex flex-col items-center w-full">
+    <!-- Contenedor de fondo que ocupa todo el ancho -->
+    <div class="w-full relative bg-center bg-cover">
+      <img
+        src="/imagenes/pasillo.jpg"  
+        alt="Fondo de voluntariado"
+        class="w-full h-full object-cover absolute inset-0 z-0"
+      />
+      <div class="absolute inset-0 bg-black opacity-60 z-1"></div>
+      
+      <!-- Contenido centrado con max-width -->
+      <div class="max-w-screen-xl mx-auto relative z-10">
+        <!-- Navbar -->
+        <nav class="flex items-center justify-between w-full px-4 lg:px-0 py-3">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <Causa class="text-gray-100" width="100" /> <!-- Cambié a texto claro -->
+          </div>
 
-        <!-- Botón de hamburguesa -->
-        <button
-          @click="toggleMenu"
-          class="lg:hidden text-neutral-800 dark:text-white focus:outline-none px-4"
-        >
-          <span class="sr-only">Abrir menú</span>
-          ☰
-        </button>
-      </div>
+          <!-- Menú central -->
+          <div class="hidden lg:flex lg:items-center lg:flex-1 lg:justify-center">
+            <ul class="flex space-x-6 text-white"> <!-- Texto blanco para mejor contraste -->
+              <!-- Menu items -->
+            </ul>
+          </div>
 
-      <!-- Menú -->
-      <div id="menu-collapse" class="hidden lg:flex lg:items-center lg:w-auto mt-4 lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:space-x-6 space-y-2 lg:space-y-0 text-neutral-800 dark:text-white">
-          <!-- Add menu items here -->
-        </ul>
-      </div>
+          <!-- Iconos -->
+          <div class="flex items-center space-x-4">
+            <button
+              @click="toggleMenu"
+              class="lg:hidden text-white focus:outline-none"
+            >
+              <span class="sr-only">Abrir menú</span>
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+            <div class="text-white hover:text-amber-300 transition cursor-pointer ml-4">
+              <i class="fas fa-user-circle text-2xl"></i>
+            </div>
+          </div>
+        </nav>
 
-      <!-- Icono de usuario -->
-      <div class="text-gray-600 hover:text-gray-800 transition cursor-pointer">
-        <i class="fas fa-user-circle text-2xl"></i>
+        <!-- Hero Section -->
+        <section class="text-center py-20 px-6 w-full">
+          <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-semibold leading-tight mb-4 text-white">
+              Explora oportunidades de <span class="text-amber-400">voluntariado</span>
+            </h1>
+            <p class="mt-4 text-lg text-gray-200 mb-8"> <!-- Texto gris claro -->
+              Inspira, colabora y haz la diferencia :D
+            </p>
+          </div>
+        </section>
       </div>
-    </nav>
-
-    <!-- Hero principal -->
-    <section class="text-center py-20 px-6 w-full">
-      <div class="max-w-3xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-semibold leading-tight mb-4">
-          Explora oportunidades de <span class="text-amber-500">voluntariado</span>
-        </h1>
-        <p class="mt-4 text-lg text-gray-600 mb-8">
-          Inspira, colabora y haz la diferencia.
-        </p>
-        <button class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-full transition duration-300">
-          Empieza ahora
-        </button>
-      </div>
-    </section>
+    </div>
   </div>
 </template>
-
-// ... existing code ...
 
 
 <script>
