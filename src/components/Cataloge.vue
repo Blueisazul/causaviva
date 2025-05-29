@@ -4,54 +4,44 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     rel="stylesheet"
   />
-  <div class="pt-20">
+  <div class="">
     <!-- Filtros -->
-    <div class="py-8 px-10">
-      <div class="flex flex-wrap gap-4 justify-between items-center">
-        <select
-          class="bg-white border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400"
-        >
-          <option>Categoría</option>
-          <option>Educación</option>
-          <option>Medio Ambiente</option>
-          <option>Salud</option>
-        </select>
-        <select
-          class="bg-white border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400"
-        >
-          <option>Ubicación</option>
-          <option>Lima</option>
-          <option>Arequipa</option>
-          <option>Cusco</option>
-        </select>
-        <select
-          class="bg-white border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400"
-        >
-          <option>Modalidad</option>
-          <option>Presencial</option>
-          <option>Virtual</option>
-          <option>Híbrido</option>
-        </select>
-        <button
-          class="bg-amber-500 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition"
-        >
-          Filtrar
-        </button>
-        <div class="relative flex items-center">
-          <input
-            type="text"
-            placeholder="Buscar voluntariados..."
-            class="w-full py-3 px-4 rounded-lg focus:outline-none"
-          />
-          <button
-            class="absolute right-2 bg-amber-700 text-white p-2 rounded-lg"
-          >
-            <i class="fas fa-search"></i>
-          </button>
+    <div class="py-8 px-4 md:px-10 bg-gray-50 rounded-xl"> <!-- Contenedor con fondo y bordes redondeados -->
+      <h3 class="text-lg font-semibold text-gray-700 mb-4">Filtrar voluntariados</h3> <!-- Título de sección -->
+      <div class="flex flex-wrap gap-4 items-end"> <!-- Alineación vertical al fondo -->
+        <!-- Selectores con etiquetas -->
+        <div class="flex-1 min-w-[180px]">
+          <label class="block text-sm font-medium text-gray-600 mb-1">Categoría</label>
+          <select class="w-full bg-white border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-400">
+            <!-- Opciones... -->
+          </select>
         </div>
+        
+        <!-- Repetir para otros selectores -->
+
+        <!-- Campo de búsqueda mejorado -->
+        <div class="flex-1 min-w-[250px]">
+          <label class="block text-sm font-medium text-gray-600 mb-1">Buscar</label>
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Ej: Educación, Lima..."
+              class="w-full py-2 px-4 pr-10 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+            />
+            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-amber-600">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Botón con icono -->
+        <button class="bg-amber-500 text-white px-6 py-2 rounded-lg hover:bg-amber-600 transition flex items-center gap-2 h-[42px]">
+          <i class="fas fa-filter"></i> Filtrar
+        </button>
       </div>
     </div>
   </div>
+
   <!-- Listado de Voluntariados -->
   <div class="py-8 px-10">
     <h2 class="text-2xl font-bold text-gray-800 mb-6">
@@ -69,9 +59,9 @@
               class="w-full h-48 object-cover hover:scale-105 transition duration-300"
             />
             <div
-              class="absolute top-2 right-2 bg-amber-400 text-white text-xs px-2 py-1 rounded-full"
+              class="absolute top-2 right-2 bg-teal-400/80 text-white text-xs font-semibold px-2 py-1 rounded-md"
             >
-              {{ vol.detalles.categoria }}
+              {{ vol.detalles.modalidad }}
             </div>
           </div>
         </div>
@@ -80,7 +70,7 @@
             <span class="font-semibold text-sm text-blue-500">{{
               vol.organizacion.nombre
             }}</span>
-            <span v-if="vol.organizacion.verificada" class="text-cyan-400">
+            <span v-if="vol.organizacion.verificada" class="">
               <!-- Verificación -->
               <svg
                 class="w-4 h-4 ml-1 text-teal-500"
@@ -103,7 +93,7 @@
           </p>
 
           <div
-            class="pt-2 flex flex-wrap items-center gap-y-1 gap-x-3 text-xs text-gray-500"
+            class="pt-4 flex flex-wrap items-center gap-y-1 gap-x-3 text-xs text-gray-500"
           >
             <span class="flex items-center">
               <svg
@@ -145,7 +135,7 @@
             </span>
           </div>
 
-          <div class="pt-2">
+          <div class="pt-4">
             <div class="flex justify-between text-xs text-gray-500 mb-1">
               <span
                 >{{ vol.estadisticas.voluntarios_inscritos }} voluntarios</span
@@ -162,7 +152,7 @@
             </div>
             <div class="w-full bg-gray-200 rounded-full h-1.5">
               <div
-                class="bg-green-500 h-1.5 rounded-full"
+                class="bg-linear-to-bl from-teal-400/90 to-teal-500 h-1.5 rounded-full"
                 :style="{
                   width:
                     (vol.estadisticas.voluntarios_inscritos /
@@ -174,12 +164,27 @@
             </div>
           </div>
 
-          <RouterLink
-            to="/portafolio/detalle"
-            class="block text-neutral-800 text-end py-2 text-sm rounded-lg hover:text-amber-500 transition"
-          >
-            Ver detalles
-          </RouterLink>
+          <div class="flex items-center flex-wrap justify-between py-3 ">
+            <RouterLink
+              to="/portafolio/detalle"
+              class="block text-neutral-800 text-sm hover:text-amber-500 "
+            >
+              <span class="flex items-end justify-end group hover:cursor-pointer">
+                <span class="group-hover:text-blue-500 hover:underline hover:decoration duration-200">Ver detalles</span>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right transition-transform duration-200 ease-in-out group-hover:translate-x-1 group-hover:stroke-blue-500">
+                  <path d="m9 18 6-6-6-6"/>
+                </svg> -->
+              </span>
+            </RouterLink>
+            <RouterLink 
+              to="/portafolio/detalle">
+              <button
+                class="cursor-pointer bg-linear-to-bl from-yellow-400/90 to-yellow-500 hover:bg-gradient-to-bl hover:from-yellow-400/80 hover:to-yellow-500/90 text-ntral-800 text-sm  px-6 py-2 rounded-lg transition"
+              >
+                Inscribirse
+              </button>
+            </RouterLink>
+          </div>
         </div>
       </div>
     </div>
@@ -246,7 +251,7 @@ export default {
           },
           detalles: {
             ubicacion: "Lima, Perú",
-            modalidad: "presencial",
+            modalidad: "Presencial",
             categoria: "Educación",
           },
           estadisticas: {
@@ -272,7 +277,7 @@ export default {
           },
           detalles: {
             ubicacion: "Lima, Perú",
-            modalidad: "presencial",
+            modalidad: "Hibrido",
             categoria: "Educación",
           },
           estadisticas: {
@@ -298,7 +303,7 @@ export default {
           },
           detalles: {
             ubicacion: "Lima, Perú",
-            modalidad: "presencial",
+            modalidad: "Remoto",
             categoria: "Educación",
           },
           estadisticas: {
@@ -324,7 +329,7 @@ export default {
           },
           detalles: {
             ubicacion: "Lima, Perú",
-            modalidad: "presencial",
+            modalidad: "Presencial",
             categoria: "Educación",
           },
           estadisticas: {
@@ -350,7 +355,7 @@ export default {
           },
           detalles: {
             ubicacion: "Lima, Perú",
-            modalidad: "presencial",
+            modalidad: "Remoto",
             categoria: "Educación",
           },
           estadisticas: {
@@ -376,7 +381,7 @@ export default {
           },
           detalles: {
             ubicacion: "Lima, Perú",
-            modalidad: "presencial",
+            modalidad: "Hibrido",
             categoria: "Educación",
           },
           estadisticas: {
@@ -402,7 +407,7 @@ export default {
           },
           detalles: {
             ubicacion: "Arequipa, Perú",
-            modalidad: "presencial",
+            modalidad: "Hibrido",
             categoria: "Medio Ambiente",
           },
           estadisticas: {
@@ -428,7 +433,7 @@ export default {
           },
           detalles: {
             ubicacion: "Cusco, Perú",
-            modalidad: "presencial",
+            modalidad: "Presencial",
             categoria: "Salud",
           },
           estadisticas: {
@@ -454,7 +459,7 @@ export default {
           },
           detalles: {
             ubicacion: "Virtual",
-            modalidad: "virtual",
+            modalidad: "Remoto",
             categoria: "Educación",
           },
           estadisticas: {

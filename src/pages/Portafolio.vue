@@ -7,7 +7,7 @@ import Cataloge from "../components/Cataloge.vue";
 </script>
 
 <template>
-  <div class="bg-gradient-to-r from-gray-50 to-slate-100 min-h-screen">
+  <div class="blurredbg-gradient-to-bl from-white to-slate-50 min-h-screen">
     <NavbarUsuario />
 
     <Cataloge />
