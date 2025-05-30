@@ -224,76 +224,70 @@
       </nav>
     </div>
   </div>
-
-  <!-- Testimonios - Versión con fondo completo -->
-  <section class="relative">
-    <!-- Fondo que cubre todo el ancho -->
-    <div class="absolute inset-0 bg-gray-50 -z-10"></div>
-    
-    <!-- Contenedor de contenido centrado -->
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h2 class="text-3xl font-bold text-center mb-12">Historias que inspiran</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Testimonio 1 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-          <div class="flex items-center mb-4">
-            <img
-              src="/imagenes/pasillo.jpg"
-              alt="Testimonio 1"
-              class="w-12 h-12 rounded-full mr-4"
-            />
-            <div>
-              <h3 class="text-lg font-semibold">Ana Pérez</h3>
-              <p class="text-sm text-gray-500">Voluntaria en EcoVida</p>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">
-            "Participar en el voluntariado de EcoVida ha sido una experiencia transformadora. He aprendido tanto y he conocido a personas increíbles."
-          </p>
-        </div>
-
-        <!-- Testimonio 2 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-          <div class="flex items-center mb-4">
-            <img
-              src="/imagenes/pasillo.jpg"
-              alt="Testimonio 2"
-              class="w-12 h-12 rounded-full mr-4"
-            />
-            <div>
-              <h3 class="text-lg font-semibold">Carlos López</h3>
-              <p class="text-sm text-gray-500">Voluntario en Manos Solidarias</p>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">
-            "Participar en el voluntariado de Manos Solidarias ha sido una experiencia increíble. He aprendido mucho y he hecho amigos increibles."
-          </p>
-        </div>
-
-        <!-- Testimonio 3 -->
-        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
-          <div class="flex items-center mb-4">
-            <img
-              src="/imagenes/pasillo.jpg"
-              alt="Testimonio 3"
-              class="w-12 h-12 rounded-full mr-4"
-            />
-            <div>
-              <h3 class="text-lg font-semibold">Mariana Rodríguez</h3>
-              <p class="text-sm text-gray-500">Voluntaria en Cuidad Verde</p>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">
-            "Participar en el voluntariado de Cuidad Verde ha sido una experiencia increíble. He aprendido tanto y he conocido a personas increíbles."
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
 </div>
 
+<!-- Testimonios - Versión con fondo completo -->
+<section class="bg-gray-50 w-full">
+  <!-- Contenedor de contenido centrado -->
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Historias que inspiran</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Testimonio 1 -->
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <img
+            src="/imagenes/pasillo.jpg"
+            alt="Testimonio 1"
+            class="w-12 h-12 rounded-full mr-4"
+          />
+          <div>
+            <h3 class="text-lg font-semibold">Ana Pérez</h3>
+            <p class="text-sm text-gray-500">Voluntaria en EcoVida</p>
+          </div>
+        </div>
+        <p class="text-gray-700 mb-4">
+          "Participar en el voluntariado de EcoVida ha sido una experiencia transformadora. He aprendido tanto y he conocido a personas increíbles."
+        </p>
+      </div>
+
+      <!-- Testimonio 2 -->
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <img
+            src="/imagenes/pasillo.jpg"
+            alt="Testimonio 2"
+            class="w-12 h-12 rounded-full mr-4"
+          />
+          <div>
+            <h3 class="text-lg font-semibold">Carlos López</h3>
+            <p class="text-sm text-gray-500">Voluntario en Manos Solidarias</p>
+          </div>
+        </div>
+        <p class="text-gray-700 mb-4">
+          "Participar en el voluntariado de Manos Solidarias ha sido una experiencia increíble. He aprendido mucho y he hecho amigos increibles."
+        </p>
+      </div>
+
+      <!-- Testimonio 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <div class="flex items-center mb-4">
+          <img
+            src="/imagenes/pasillo.jpg"
+            alt="Testimonio 3"
+            class="w-12 h-12 rounded-full mr-4"
+          />
+          <div>
+            <h3 class="text-lg font-semibold">Mariana Rodríguez</h3>
+            <p class="text-sm text-gray-500">Voluntaria en Cuidad Verde</p>
+          </div>
+        </div>
+        <p class="text-gray-700 mb-4">
+          "Participar en el voluntariado de Cuidad Verde ha sido una experiencia increíble. He aprendido tanto y he conocido a personas increíbles."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 </template>
 
@@ -488,7 +482,7 @@ export default {
         },
         {
           id: 8,
-          titulo: "Voluntariado en comedor social",
+          titulo: "Voluntariado in comedor social",
           imagen: "/causaviva/imagenes/visita.jpg",
           organizacion: {
             nombre: "Manos Solidarias",
