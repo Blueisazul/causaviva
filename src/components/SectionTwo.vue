@@ -65,12 +65,12 @@
 
                 <!-- Arriba derecha -->
                 <div class="flex items-end justify-start">
-                    <img class="w-70 h-70 object-cover rounded-2xl" src="/src/assets/images/crea2.jpg" />
+                    <img class="w-70 h-70 object-cover rounded-2xl" src="/public/imagenes/crea2.jpg" />
                 </div>         
 
                 <!-- Abajo izquierda -->
                 <div class="flex items-end justify-end">
-                    <img class="w-80 h-80 object-cover rounded-2xl" src="/src/assets/images/crea1.jpg" />
+                    <img class="w-80 h-80 object-cover rounded-2xl" src="/public/imagenes/crea1.jpg" />
                 </div>
 
                 <!-- Abajo izquierda ("Crea+") -->

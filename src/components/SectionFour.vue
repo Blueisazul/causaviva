@@ -4,7 +4,7 @@
   <div class="relative rounded-2xl overflow-hidden my-10 shadow-2xl">
     <img
       class="w-full h-[400px] md:h-[500px] object-cover"
-      src="/src/assets/images/bgindexone.jpg"
+      src="/public/imagenes/bgindexone.jpg"
       alt="Voluntarios de Causa Viva trabajando en comunidad"
     />
     <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/40 rounded-xl"></div>
@@ -53,7 +53,7 @@
       <div class="relative flex-shrink-0">
         <img
           class="w-full sm:w-40 h-40 rounded-xl object-cover shadow-md group-hover:shadow-lg transition duration-300"
-          src="/src/assets/images/ban1.jpg"
+          src="/public/imagenes/ban1.jpg"
           alt="Equipo de voluntarios en acción"
         />
         <div class="absolute -inset-2 border-2 border-yellow-400 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"></div>
@@ -71,7 +71,7 @@
       <div class="relative flex-shrink-0">
         <img
           class="w-full sm:w-40 h-40 rounded-xl object-cover shadow-md group-hover:shadow-lg transition duration-300"
-          src="/src/assets/images/ban2.jpg"
+          src="/public/imagenes/ban2.jpg"
           alt="Taller educativo con adultos mayores"
         />
         <div class="absolute -inset-2 border-2 border-yellow-400 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"></div>

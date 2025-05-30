@@ -9,10 +9,13 @@ import EnrolledMaintance from '../components/Organization/EnrolledMaintance.vue'
 import DashboardMaintance from '../components/Organization/DashboardMaintance.vue'
 import ProposalsNew from '../components/Organization/Proposals/ProposalsNew.vue'
 import ProposalsMaintance from '../components/Organization/Proposals/ProposalsMaintance.vue'
+import Register from '../pages/auth/Register.vue'
+import CatalogeDetalle from '../components/CatalogeDetalle.vue'
 
 const routes = [
   { path: '/', component: PageIndex },
   { path: '/portafolio', component: Portafolio },
+  { path: '/portafolio/detalle', component: CatalogeDetalle },
   { path: '/login', component: Login },
   { path: '/register', component: SelectRol },
   { path: '/registro-organizacion', component: RegisterOrganization },
