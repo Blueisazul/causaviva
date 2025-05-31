@@ -9,7 +9,7 @@ import EnrolledMaintance from '../components/Organization/EnrolledMaintance.vue'
 import DashboardMaintance from '../components/Organization/DashboardMaintance.vue'
 import ProposalsNew from '../components/Organization/Proposals/ProposalsNew.vue'
 import ProposalsMaintance from '../components/Organization/Proposals/ProposalsMaintance.vue'
-import Register from '../pages/auth/Register.vue'
+//import Register from '../pages/auth/Register.vue' - Porque register.vue esta dentro de Register
 import CatalogeDetalle from '../components/CatalogeDetalle.vue'
 
 const routes = [
