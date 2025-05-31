@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-white py-8 px-4 sm:px-6 lg:px-8">
+    <div class="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-white py-10 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <!-- Header del dashboard -->
             <div class="relative bg-white rounded-xl shadow-md p-0 mb-8 border border-blue-50 overflow-hidden">

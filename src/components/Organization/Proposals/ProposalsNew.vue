@@ -1,79 +1,101 @@
 <template>
-    <div class="col-12">
-        <div class="card shadow-lg rounded-lg p-6 bg-white">
-            <Toolbar class="mb-6 p-0 border-0 bg-white">
-                <template #start>
-                    <h1 class="text-2xl font-bold text-gray-800">Nueva Propuesta</h1>
-                </template>
-                <template #end></template>
-            </Toolbar>
+    <div class="w-full py-20 px-6 bg-gradient-to-br from-gray-50 via-blue-50 to-white min-h-screen">
+        <div class="bg-white rounded-lg shadow p-6">
+            <!-- Toolbar Superior -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-bold text-gray-800">Nueva Propuesta</h1>
+            </div>
 
-            <div class="flex flex-col gap-6">
-                <div class="p-fluid p-formgrid grid gap-4">
-                    <div class="field col-12 md:col-4">
-                        <FloatLabel>
-                            <InputText id="txtTitle" v-model="oPropuestas.tituloPropuesta" class="w-full" />
-                            <label for="lblTitle">Titulo</label>
-                        </FloatLabel>
+            <div class="flex flex-col space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Campo Título -->
+                    <div class="relative">
+                        <input id="txtTitle" v-model="oPropuestas.tituloPropuesta" 
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"/>
+                        <label for="txtTitle" 
+                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            Título
+                        </label>
                     </div>
-                    <div class="field col-12 md:col-4">
-                        <FloatLabel>
-                            <Textarea id="txtDescription" rows="2" cols="30"
-                                v-model="oPropuestas.descripcionPropuesta" class="w-full" />
-                            <label for="lblDescription">Descripcion</label>
-                        </FloatLabel>
+
+                    <!-- Campo Descripción -->
+                    <div class="relative md:col-span-2">
+                        <textarea id="txtDescription" rows="2" v-model="oPropuestas.descripcionPropuesta"
+                                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"></textarea>
+                        <label for="txtDescription" 
+                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            Descripción
+                        </label>
                     </div>
-                    <div class="field col-12 md:col-4">
-                        <FloatLabel>
-                            <Textarea id="txtDirection" rows="2" cols="30" v-model="oPropuestas.direccion" class="w-full" />
-                            <label for="lblDirection">Direccion</label>
-                        </FloatLabel>
+
+                    <!-- Campo Dirección -->
+                    <div class="relative md:col-span-2">
+                        <textarea id="txtDirection" rows="2" v-model="oPropuestas.direccion"
+                                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"></textarea>
+                        <label for="txtDirection" 
+                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            Dirección
+                        </label>
                     </div>
-                    <div class="field col-12 md:col-4">
-                        <FloatLabel>
-                            <!-- <Calendar id="txtInitDate" v-model="fechaInicio" showTime hourFormat="24" />
-                            <label for="lblInitDate">Fecha Inicio</label> -->
-                            <InputText id="txtInitDate" v-model="oPropuestas.fechaInicio" class="w-full" />
-                            <label for="lblInitDate">Fecha Inicio</label>
-                        </FloatLabel>
+
+                    <!-- Campo Fecha Inicio -->
+                    <div class="relative">
+                        <input id="txtInitDate" v-model="oPropuestas.fechaInicio" type="date"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"/>
+                        <label for="txtInitDate" 
+                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            Fecha Inicio
+                        </label>
                     </div>
-                    <div class="field col-12 md:col-8">
-                        <FloatLabel>
-                            <InputText id="txtFinalDate" v-model="oPropuestas.fechaFinal" class="w-full" />
-                            <label for="lblFinalDate">Fecha Final</label>
-                        </FloatLabel>
+
+                    <!-- Campo Fecha Final -->
+                    <div class="relative">
+                        <input id="txtFinalDate" v-model="oPropuestas.fechaFinal" type="date"
+                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"/>
+                        <label for="txtFinalDate" 
+                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            Fecha Final
+                        </label>
                     </div>
                 </div>
             </div>
 
-            <Divider layout="horizontal" class="my-6" />
+            <div class="border-t border-gray-200 my-6"></div>
 
-            <Toolbar class="mb-6 p-0 border-0 bg-white">
-                <template #start>
-                    <h1 class="text-2xl font-bold text-gray-800">Requisitos</h1>
-                </template>
-                <template #end></template>
-            </Toolbar>
+            <!-- Sección Requisitos -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="text-2xl font-bold text-gray-800">Requisitos</h1>
+            </div>
 
-            <div class="flex flex-col gap-6">
-                <div class="p-fluid p-formgrid grid gap-4">
-                    <div class="field col-12 md:col-4">
-                        <FloatLabel>
-                            <Textarea id="txtDescriptionRequirements" rows="2" cols="30"
-                                v-model="oPropuestas.descripcionRequisito" class="w-full" />
-                            <label for="lblDescriptionRequirements">Descripcion</label>
-                        </FloatLabel>
+            <div class="flex flex-col space-y-6">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Campo Descripción Requisitos -->
+                    <div class="relative">
+                        <textarea id="txtDescriptionRequirements" rows="2" v-model="oPropuestas.descripcionRequisito"
+                                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"></textarea>
+                        <label for="txtDescriptionRequirements" 
+                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            Descripción
+                        </label>
                     </div>
                 </div>
             </div>
 
-            <Divider layout="horizontal" class="my-6" />
+            <div class="border-t border-gray-200 my-6"></div>
 
-            <div class="flex justify-start gap-4 mt-4">
-                <Button label="Guardar" icon="pi pi-save" severity="primary" iconPos="right" @click="SaveProposals" class="px-6 py-2" />
-                <Button label="Atrás" icon="pi pi-arrow-left" class="ml-2 px-6 py-2" severity="secondary" @click="BackTo" />
+            <!-- Botones de Acción -->
+            <div class="flex justify-start space-x-3">
+                <button @click="SaveProposals" 
+                        class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    <i class="pi pi-save mr-2"></i>
+                    Guardar
+                </button>
+                <button @click="BackTo" 
+                        class="flex items-center px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
+                    <i class="pi pi-arrow-left mr-2"></i>
+                    Atrás
+                </button>
             </div>
-
         </div>
     </div>
 </template>
@@ -108,7 +130,6 @@ const Initialize = () => {
     LoadPropuestasDetalle(idVoluntariado);
 };
 
-
 const BackTo = () => {
     router.push('/portal/Organizacion/Propuestas');
 }
@@ -119,16 +140,11 @@ const LoadPropuestasDetalle = async (idVoluntariado) => {
     if (response.status == 200) {
         console.log('Propuestas loaded successfully:', response.data);
         oPropuestas.value = response.data[0];
-        //fechaInicio.value = new Date(response.data[0].fechaInicio); // Convertimos a Date → falta revisar esta parte
     }
-    // if (response.status === 200 && Array.isArray(response.data) && response.data.length > 0) {
-    //     console.log('Datos obtenidos:', response.data);
-    //     oPropuestas.value = response.data[0]; // Tomamos el primer elemento del array
-    // }
 }
 
 const SaveProposals = async () => {
-    const idVoluntariado = oPropuestas.value.idVoluntariado; // Extraer el id correctamente
+    const idVoluntariado = oPropuestas.value.idVoluntariado;
 
     if (!idVoluntariado || idVoluntariado === 0) {
         await CreateProposals();
@@ -137,9 +153,7 @@ const SaveProposals = async () => {
     }
 };
 
-
 const UpdateProposals = async () => {
-
     const { ...model } = oPropuestas.value;
 
     const request = {
@@ -159,17 +173,17 @@ const UpdateProposals = async () => {
 }
 
 const CreateProposals = async () => {
-    const idOrganizacion = localStorage.getItem('organizationId'); // Obtener ID almacenado
+    const idOrganizacion = localStorage.getItem('organizationId');
 
     if (!idOrganizacion) {
         console.error('Error: No se encontró idOrganizacion en localStorage.');
         return;
     }
 
-    const { idVoluntariado, ...model } = oPropuestas.value; // Excluir idVoluntariado si no es necesario
+    const { idVoluntariado, ...model } = oPropuestas.value;
 
     const request = {
-        idOrganizacion, // API requiere este campo
+        idOrganizacion,
         ...model
     };
 
@@ -184,11 +198,21 @@ const CreateProposals = async () => {
         console.error('Error creating propuesta:', response);
     }
 }
-
 </script>
 
 <style scoped>
-.p-inputnumber .p-inputtext {
-    text-align: left;
+/* Estilos personalizados para los inputs con tipo date */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.5);
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    filter: invert(0.3);
+}
+
+/* Transición suave para los labels flotantes */
+label {
+    transition: all 0.2s ease-out;
 }
 </style>
