@@ -2,11 +2,21 @@
     <div class="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-white py-8 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <!-- Header del dashboard -->
-            <div class="bg-white rounded-xl shadow-md p-6 mb-8 border border-blue-50">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+            <div class="relative bg-white rounded-xl shadow-md p-0 mb-8 border border-blue-50 overflow-hidden">
+                <!-- Fondo de imagen -->
+                <div class="absolute inset-0 z-0">
+                    <img
+                        class="w-full h-[200px] md:h-[250px] object-cover"
+                        src="/imagenes/bgindexone.jpg"
+                        alt="fondo"
+                    />
+                    <div class="absolute inset-0 bg-white/70"></div>
+                </div>
+                <!-- Contenido del header -->
+                <div class="relative z-10 p-6 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
                     <div>
                         <h1 class="text-3xl font-bold text-blue-900">Propuestas</h1>
-                        <p class="text-blue-600 mt-1">Administra tus propuestas de voluntariado</p>
+                        <p class="text-neutral-600 mt-1">Administra tus propuestas de voluntariado</p>
                     </div>
                     <button
                         @click="OpenProposalNew()"
@@ -60,13 +70,13 @@
                                         <div class="flex justify-center gap-2">
                                             <button 
                                                 @click="EditProposal(item.idVoluntariado)"
-                                                class="p-2 rounded-lg bg-blue-50 hover:bg-blue-100 text-blue-600 transition-all duration-200 hover:shadow-sm"
+                                                class="p-2 rounded-lg bg-cyan-50 hover:bg-cyan-100 text-cyan-600 transition-all duration-200 hover:shadow-sm mr-2"
                                             >
                                                 <i class="pi pi-pencil"></i>
                                             </button>
                                             <button 
                                                 @click="UpdateStatusProposal(item)"
-                                                class="p-2 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-600 transition-all duration-200 hover:shadow-sm"
+                                                class="p-2 rounded-lg bg-orange-50 hover:bg-orange-100 text-orange-600 transition-all duration-200 hover:shadow-sm "
                                             >
                                                 <i class="pi pi-power-off"></i>
                                             </button>
