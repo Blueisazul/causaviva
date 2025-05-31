@@ -60,8 +60,42 @@ onMounted(() => {
     margin-right: 10px;
 }
 
-.profile span {
-    font-size: 14px;
-    color: #fff;
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 3px;
+}
+
+:deep(.p-panelmenu .p-panelmenu-header .p-panelmenu-header-link) {
+
+  background: #1e40af; /* azul tailwind (blue-900) */
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+:deep(.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link) {
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border-radius: 8px;
+    color: rgba(255,255,255,0.8);
+}
+
+:deep(.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:hover) {
+    background: rgba(23, 176, 117, 0.1);
+    color: white;
+}
+
+:deep(.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-menuitem-icon) {
+    color: #93c5fd;
+    margin-right: 0.75rem;
+}
+
+:deep(.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-submenu-icon) {
+    color: rgba(255,255,255,0.6);
+}
+
+:deep(.p-menuitem-icon) {
+    @apply text-blue-300;
+}
+:deep(.p-menuitem-text) {
+    @apply text-white/90;
 }
 </style>
