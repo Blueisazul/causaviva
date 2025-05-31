@@ -1,16 +1,64 @@
 <template>
-    <div class="sidebar">
-        <PanelMenu :model="menuItems" />
+<div class="sidebar h-screen w-64 flex flex-col overflow-y-auto transition-all duration-300 bg-gradient-to-b from-blue-900 to-blue-800 shadow-xl">
+    <!-- Logo/Header -->
+    <div class="p-6 mb-2 flex justify-center items-center">
+        <Causa class="text-white" width="120" />
     </div>
+
+    <!-- Menú Principal -->
+    <div class="flex flex-col px-2 py-2 space-y-1">
+        <template v-for="(item, index) in mainMenuItems" :key="index">
+            <router-link 
+                :to="item.to"
+                class="flex items-center gap-3 text-white px-4 py-3 rounded hover:bg-white/30 transition-colors duration-200"
+                active-class="bg-cyan-700/50"
+            >
+                <i :class="item.icon + ' text-lg'"></i>
+                <span>{{ item.label }}</span>
+            </router-link>
+        </template>
+    </div>
+    
+    <!-- Espacio inferior -->
+    <div class="flex-1"></div>
+    
+    <!-- Menú Secundario (Perfil y Configuración) -->
+    <div class="flex flex-col px-2 py-2 space-y-1 border-t border-blue-700/50">
+        <template v-for="(item, index) in secondaryMenuItems" :key="index">
+            <router-link 
+                :to="item.to"
+                class="flex items-center gap-3 text-white px-4 py-3 rounded hover:bg-white/30 transition-colors duration-200"
+                active-class="bg-blue-700/50"
+            >
+                <i :class="item.icon + ' text-lg'"></i>
+                <span>{{ item.label }}</span>
+            </router-link>
+        </template>
+    </div>
+    
+    <!-- Perfil -->
+    <div class="p-4">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-semibold">
+                {{ getUserInitials() }}
+            </div>
+            <div>
+                <p class="text-sm font-medium text-white">Organización</p>
+                <p class="text-xs text-blue-200">Administrador</p>
+            </div>
+        </div>
+    </div>
+</div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
-import PanelMenu from 'primevue/panelmenu';
 import LoginService from '../../services/LoginService';
+import Causa from '../../icons/Causa.vue';
 
-const menuItems = ref([]);
+const mainMenuItems = ref([]);
+const secondaryMenuItems = ref([]);
 const router = useRouter();
 
 async function loadMenu() {
@@ -21,16 +69,28 @@ async function loadMenu() {
             return;
         }
         const response = await LoginService.OrganizationLogin(idUser);
-        menuItems.value = response.data.menus.map(menu => ({
+        
+        // Separamos los últimos 2 elementos para el menú secundario
+        const allItems = response.data.menus.map(menu => ({
             label: menu.nombre,
             icon: menu.icono,
-            to: menu.ruta,
-            command: () => router.push(menu.ruta)
+            to: menu.ruta
         }));
-        console.log('Menús cargados:', menuItems.value);
+        
+        // Los últimos 2 elementos van al menú secundario
+        secondaryMenuItems.value = allItems.slice(-2);
+        // El resto al menú principal
+        mainMenuItems.value = allItems.slice(0, -2);
+        
+        console.log('Menús principales cargados:', mainMenuItems.value);
+        console.log('Menús secundarios cargados:', secondaryMenuItems.value);
     } catch (error) {
         console.error('Error al cargar los menús:', error);
     }
+}
+
+function getUserInitials() {
+    return 'O'; // Por "Organización"
 }
 
 onMounted(() => {
@@ -40,24 +100,16 @@ onMounted(() => {
 
 <style scoped>
 .sidebar {
-    width: 250px;
-    height: 100vh;
-    background: #e0ae22;
-    color: black;
-    padding: 20px;
-    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.2) transparent;
 }
 
-.profile {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+.sidebar::-webkit-scrollbar {
+    width: 6px;
 }
 
-.profile img {
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .sidebar::-webkit-scrollbar-thumb {
@@ -65,37 +117,7 @@ onMounted(() => {
     border-radius: 3px;
 }
 
-:deep(.p-panelmenu .p-panelmenu-header .p-panelmenu-header-link) {
-
-  background: #1e40af; /* azul tailwind (blue-900) */
-  color: #fff;
-  border-radius: 0.5rem;
-}
-
-:deep(.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link) {
-    padding: 0.75rem 1rem 0.75rem 2.5rem;
-    border-radius: 8px;
-    color: rgba(255,255,255,0.8);
-}
-
-:deep(.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:hover) {
-    background: rgba(23, 176, 117, 0.1);
-    color: white;
-}
-
-:deep(.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-menuitem-icon) {
-    color: #93c5fd;
-    margin-right: 0.75rem;
-}
-
-:deep(.p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link .p-submenu-icon) {
-    color: rgba(255,255,255,0.6);
-}
-
-:deep(.p-menuitem-icon) {
-    @apply text-blue-300;
-}
-:deep(.p-menuitem-text) {
-    @apply text-white/90;
+.router-link-active {
+    background-color: rgba(99, 102, 241, 0.5);
 }
 </style>

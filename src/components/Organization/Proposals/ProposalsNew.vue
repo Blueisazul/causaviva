@@ -1,31 +1,31 @@
 <template>
     <div class="col-12">
-        <div class="card">
-            <Toolbar class="mb-4 p-0" style="background-color: white; border: none;">
+        <div class="card shadow-lg rounded-lg p-6 bg-white">
+            <Toolbar class="mb-6 p-0 border-0 bg-white">
                 <template #start>
-                    <h1>Nueva Propuesta</h1>
+                    <h1 class="text-2xl font-bold text-gray-800">Nueva Propuesta</h1>
                 </template>
                 <template #end></template>
             </Toolbar>
 
-            <div class="flex flex-column h-500rem">
-                <div class="p-fluid p-formgrid grid">
+            <div class="flex flex-col gap-6">
+                <div class="p-fluid p-formgrid grid gap-4">
                     <div class="field col-12 md:col-4">
                         <FloatLabel>
-                            <InputText id="txtTitle" v-model="oPropuestas.tituloPropuesta" />
+                            <InputText id="txtTitle" v-model="oPropuestas.tituloPropuesta" class="w-full" />
                             <label for="lblTitle">Titulo</label>
                         </FloatLabel>
                     </div>
                     <div class="field col-12 md:col-4">
                         <FloatLabel>
                             <Textarea id="txtDescription" rows="2" cols="30"
-                                v-model="oPropuestas.descripcionPropuesta" />
+                                v-model="oPropuestas.descripcionPropuesta" class="w-full" />
                             <label for="lblDescription">Descripcion</label>
                         </FloatLabel>
                     </div>
                     <div class="field col-12 md:col-4">
                         <FloatLabel>
-                            <Textarea id="txtDirection" rows="2" cols="30" v-model="oPropuestas.direccion" />
+                            <Textarea id="txtDirection" rows="2" cols="30" v-model="oPropuestas.direccion" class="w-full" />
                             <label for="lblDirection">Direccion</label>
                         </FloatLabel>
                     </div>
@@ -33,45 +33,45 @@
                         <FloatLabel>
                             <!-- <Calendar id="txtInitDate" v-model="fechaInicio" showTime hourFormat="24" />
                             <label for="lblInitDate">Fecha Inicio</label> -->
-                            <InputText id="txtInitDate" v-model="oPropuestas.fechaInicio" />
+                            <InputText id="txtInitDate" v-model="oPropuestas.fechaInicio" class="w-full" />
                             <label for="lblInitDate">Fecha Inicio</label>
                         </FloatLabel>
                     </div>
                     <div class="field col-12 md:col-8">
                         <FloatLabel>
-                            <InputText id="txtFinalDate" v-model="oPropuestas.fechaFinal" />
+                            <InputText id="txtFinalDate" v-model="oPropuestas.fechaFinal" class="w-full" />
                             <label for="lblFinalDate">Fecha Final</label>
                         </FloatLabel>
                     </div>
                 </div>
             </div>
 
-            <Divider layout="horizontal" />
+            <Divider layout="horizontal" class="my-6" />
 
-            <Toolbar class="mb-4 p-0" style="background-color: white; border: none;">
+            <Toolbar class="mb-6 p-0 border-0 bg-white">
                 <template #start>
-                    <h1>Requisitos</h1>
+                    <h1 class="text-2xl font-bold text-gray-800">Requisitos</h1>
                 </template>
                 <template #end></template>
             </Toolbar>
 
-            <div class="flex flex-column h-500rem">
-                <div class="p-fluid p-formgrid grid">
+            <div class="flex flex-col gap-6">
+                <div class="p-fluid p-formgrid grid gap-4">
                     <div class="field col-12 md:col-4">
                         <FloatLabel>
                             <Textarea id="txtDescriptionRequirements" rows="2" cols="30"
-                                v-model="oPropuestas.descripcionRequisito" />
+                                v-model="oPropuestas.descripcionRequisito" class="w-full" />
                             <label for="lblDescriptionRequirements">Descripcion</label>
                         </FloatLabel>
                     </div>
                 </div>
             </div>
 
-            <Divider layout="horizontal" />
+            <Divider layout="horizontal" class="my-6" />
 
-            <div class="flex justify-content-start">
-                <Button label="Guardar" icon="pi pi-save" severity="primary" iconPos="right" @click="SaveProposals" />
-                <Button label="Atrás" icon="pi pi-arrow-left" class="ml-2" severity="secondary" @click="BackTo" />
+            <div class="flex justify-start gap-4 mt-4">
+                <Button label="Guardar" icon="pi pi-save" severity="primary" iconPos="right" @click="SaveProposals" class="px-6 py-2" />
+                <Button label="Atrás" icon="pi pi-arrow-left" class="ml-2 px-6 py-2" severity="secondary" @click="BackTo" />
             </div>
 
         </div>
@@ -190,6 +190,5 @@ const CreateProposals = async () => {
 <style scoped>
 .p-inputnumber .p-inputtext {
     text-align: left;
-    /* Alineación del número */
 }
 </style>

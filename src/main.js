@@ -8,8 +8,9 @@ import router from './router'
 
 // createApp(App).mount('#app')
 
+//app.use(PrimeVue;
 const app = createApp(App);
-app.use(PrimeVue);
+app.use(PrimeVue, { inputStyle: 'filled' });
 app.use(router);
 
 Object.entries(Componentes).forEach(([name, component]) => {

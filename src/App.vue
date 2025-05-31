@@ -41,7 +41,7 @@ const showSidebar = computed(() => route.path.startsWith('/portal')); // Sidebar
   height: 100vh;
   /* Espacio para el sidebar */
   flex: 1;
-  padding: 20px;
+
 }
 
 /* Cuando el sidebar NO está presente */
