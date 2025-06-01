@@ -47,7 +47,7 @@ function handleSubmit() {
   }
   else if (rol === 'DNI') {
     console.log('Iniciando sesión como usuario con Voluntario/DNI');
-    loginVolunteer
+    loginVolunteer();
   } else if (rol === 'RUC') {
     console.log('Iniciando sesión como organización con Organizacion/RUC');
     loginOrganization();
@@ -72,7 +72,7 @@ async function loginOrganization() {
     console.log('Obteniendo datos de la API:', response.data);
     if (response.data.password === password.value) {
       console.log('Contraseña correcta, redirigiendo...');
-      localStorage.setItem('organizationId', response.data.login);
+      localStorage.setItem('userId', response.data.login);
       router.push({ path: `/portal` });
     } else {
       console.error('Contraseña incorrecta');
@@ -84,7 +84,20 @@ async function loginOrganization() {
 }
 
 async function loginVolunteer() {
-  //falta la logica
+  try {
+    const response = await LoginService.VolunteerLogin(String(user.value));
+    console.log('Obteniendo datos de la API:', response.data);
+    if (response.data.password === password.value) {
+      console.log('Contraseña correcta, redirigiendo...');
+      localStorage.setItem('userId', response.data.login);
+      router.push({ path: `/portal` });
+    } else {
+      console.error('Contraseña incorrecta');
+      alert('Contraseña incorrecta. Inténtalo de nuevo.');
+    }
+  } catch (error) {
+    console.error('Error al loguear voluntario:', error);
+  }
 }
 
 </script>

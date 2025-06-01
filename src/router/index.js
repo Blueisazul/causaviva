@@ -6,11 +6,18 @@ import SelectRol from '../pages/auth/Register/SelectRol.vue'
 import RegisterOrganization from '../pages/auth/Register/RegisterOrganization.vue'
 import RegisterVolunteer from '../pages/auth/Register/RegisterVolunteer.vue'
 import EnrolledMaintance from '../components/Organization/EnrolledMaintance.vue'
-import DashboardMaintance from '../components/Organization/DashboardMaintance.vue'
+import DashboardOrganizationMaintance from '../components/Organization/DashboardOrganizationMaintance.vue'
 import ProposalsNew from '../components/Organization/Proposals/ProposalsNew.vue'
 import ProposalsMaintance from '../components/Organization/Proposals/ProposalsMaintance.vue'
-//import Register from '../pages/auth/Register.vue' - Porque register.vue esta dentro de Register
+import ProfileOrganizationMaintance from '../components/Organization/ProfileOrganizationMaintance.vue'
+import ConfigurationOrganizationMaintance from '../components/Organization/ConfigurationOrganizationMaintance.vue'
+
 import CatalogeDetalle from '../components/CatalogeDetalle.vue'
+import Cataloge from '../components/Cataloge.vue'
+import RegistrationsMaintance from '../components/Volunteer/RegistrationsMaintance.vue'
+import DashboardMaintance from '../components/Volunteer/DashboardMaintance.vue'
+import ProfileMaintance from '../components/Volunteer/ProfileMaintance.vue'
+import ConfigurationMaintance from '../components/Volunteer/ConfigurationMaintance.vue'
 
 const routes = [
   { path: '/', component: PageIndex },
@@ -24,7 +31,15 @@ const routes = [
   { path: '/portal/Organizacion/Propuestas/Nuevo', component: ProposalsNew },
   { path: '/portal/Organizacion/Propuestas/Editar/:id', component: ProposalsNew },
   { path: '/portal/Organizacion/Inscritos', component: EnrolledMaintance },
-  { path: '/portal/Organizacion/Dashboard', component: DashboardMaintance }
+  { path: '/portal/Organizacion/Dashboard', component: DashboardOrganizationMaintance },
+  { path: '/portal/Organizacion/Perfil', component: ProfileOrganizationMaintance },
+  { path: '/portal/Organizacion/Configuracion', component: ConfigurationOrganizationMaintance },
+  { path: '/portal/Voluntario/Propuestas', component: Cataloge },
+  { path: '/portal/Voluntario/Propuestas/Detalle', component: CatalogeDetalle },
+  { path: '/portal/Voluntario/Incripciones', component: RegistrationsMaintance },
+  { path: '/portal/Voluntario/Dashboard', component: DashboardMaintance },
+  { path: '/portal/Voluntario/Perfil', component: ProfileMaintance },
+  { path: '/portal/Voluntario/Configuracion', component: ConfigurationMaintance },
 ];
 
 const router = createRouter({

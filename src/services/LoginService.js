@@ -12,13 +12,13 @@ const LoginService = {
         });
     },
 
-    async VolunteerLogin(data) {
-        return axios.post(`${API_URL}/Organizacion/Registrar`, data, {
+    async VolunteerLogin(idUsuario) {
+        return axios.get(`${API_URL}/SeguridadLogin/UsuarioLogin?IdUsuario=${idUsuario}`, {
             headers: {
                 'Content-Type': 'application/json'
             }
         });
-    }
+    },
 
 
 };

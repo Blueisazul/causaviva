@@ -120,11 +120,12 @@ async function registrar() {
         const response = await RegisterOrganizationService.CreateRegisterOrganizationService(
             JSON.stringify(data.value) // Serializa los datos a formato JSON explícitamente
         );
-        console.log('Organización creada:', response.data);
+        console.log('Organización registrada:', response.data);
         router.push({ path: `/login` });
     } catch (error) {
-        console.error('Error al crear organización:', error);
+        console.error('Error al registrar organización:', error);
     }
 }
 
 </script>
+
