@@ -47,7 +47,7 @@
           {{ getUserInitials() }}
         </div>
         <div>
-          <p class="text-sm font-medium text-white">Organización+</p>
+          <p class="text-sm font-medium text-white">Organización</p>
           <p class="text-xs text-blue-200">Administrador</p>
         </div>
       </div>
