@@ -17,6 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Install dependencies and build Vue.js app
+        run: |
+          npm install
+          npm run build
+
       - name: Build And Deploy
         uses: Azure/static-web-apps-deploy@v1
         with:
