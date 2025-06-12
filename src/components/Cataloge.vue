@@ -240,7 +240,7 @@ export default {
         {
           id: 1,
           titulo: "Apoyo escolar en zonas rurales",
-          imagen: "/causaviva/imagenes/ban1.jpg",
+          imagen: "/dist/imagenes/ban1.jpg",
           organizacion: {
             nombre: "Unicef",
             verificada: true,
