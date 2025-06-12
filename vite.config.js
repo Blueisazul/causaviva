@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   //base:'https://Blueisazul.github.io/causaviva'
-  base:'/',
+  base:'/'
 })
