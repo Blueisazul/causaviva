@@ -37,7 +37,7 @@ const router = useRouter();
 function handleSubmit() {
 
   console.log('Iniciando sesión con:', {
-    email: String(user.value),
+    user: String(user.value),
     password: password.value
   })
 
@@ -79,7 +79,7 @@ async function loginOrganization() {
       alert('Contraseña incorrecta. Inténtalo de nuevo.');
     }
   } catch (error) {
-    console.error('Error al crear organización:', error);
+    console.error('Error al loguear organización:', error);
   }
 }
 

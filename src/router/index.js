@@ -33,12 +33,14 @@ const routes = [
   { path: '/portal/Organizacion/Inscritos', component: EnrolledMaintance },
   { path: '/portal/Organizacion/Dashboard', component: DashboardOrganizationMaintance },
   { path: '/portal/Organizacion/Perfil', component: ProfileOrganizationMaintance },
+  { path: '/portal/Organizacion/Perfil/Editar/:id', component: ProfileOrganizationMaintance },
   { path: '/portal/Organizacion/Configuracion', component: ConfigurationOrganizationMaintance },
   { path: '/portal/Voluntario/Propuestas', component: Cataloge },
   { path: '/portal/Voluntario/Propuestas/Detalle', component: CatalogeDetalle },
   { path: '/portal/Voluntario/Incripciones', component: RegistrationsMaintance },
   { path: '/portal/Voluntario/Dashboard', component: DashboardMaintance },
   { path: '/portal/Voluntario/Perfil', component: ProfileMaintance },
+  { path: '/portal/Voluntario/Perfil/Editar/:id', component: ProfileMaintance },
   { path: '/portal/Voluntario/Configuracion', component: ConfigurationMaintance },
 ];
 

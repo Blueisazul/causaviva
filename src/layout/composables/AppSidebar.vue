@@ -64,6 +64,7 @@ import Causa from "../../icons/Causa.vue";
 const mainMenuItems = ref([]);
 const secondaryMenuItems = ref([]);
 const router = useRouter();
+const idUser = localStorage.getItem("userId");
 
 onMounted(() => {
   loadMenu();
@@ -71,7 +72,6 @@ onMounted(() => {
 
 async function loadMenu() {
   try {
-    const idUser = localStorage.getItem("userId");
     console.log("ID de usuario obtenido de localStorage:", idUser);
 
     if (!idUser) {
@@ -101,7 +101,7 @@ async function loadMenu() {
       to: menu.ruta,
       command: () => router.push(menu.ruta),
     }));
-    console.log("Menús cargados:", menuItems.value);
+    console.log("Menús cargados:", mainMenuItems.value);
 
   } catch (error) {
     console.error("Error al cargar los menús:", error);

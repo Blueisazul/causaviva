@@ -29,8 +29,14 @@
                 </div>
                 <div>
                     <label for="district" class="block mb-2 text-sm font-medium text-gray-700">Distrito</label>
-                    <input type="number" id="district" v-model="district" required
-                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200" />
+                    <select id="txtDistrito" v-model="district" :disabled="isReadOnly" required
+                        class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                        <option value="" disabled>Selecciona un distrito</option>
+                        <option v-for="distrito in oListDistrict" :key="distrito.idDistrito"
+                            :value="distrito.idDistrito">
+                            {{ distrito.nombreDistrito }}
+                        </option>
+                    </select>
                 </div>
                 <div>
                     <label for="password" class="block mb-2 text-sm font-medium text-gray-700">Contraseña</label>
@@ -56,9 +62,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import { useRouter } from "vue-router";
 import RegisterOrganizationService from '../../../services/RegisterOrganizationService';
+import DistrictService from '../../../services/DistricService.js';
 
 // Variables reactivas para el formulario
 const ruc = ref<string>('')
@@ -69,6 +76,8 @@ const direction = ref<string>('')
 const district = ref<string>('')
 const password = ref<string>('')
 const passwordConfirm = ref<string>('')
+
+const oListDistrict = ref([]);
 
 const data = ref({
     idOrganizacion: '',
@@ -81,14 +90,30 @@ const data = ref({
 
 const router = useRouter();
 
+onMounted(() => {
+    Initialize();
+});
+
+const Initialize = () => {
+    LoadDistricts();
+};
+
+const LoadDistricts = async () => {
+    const response = await DistrictService.GetDistrictService();
+    console.log("distritos: ",response.data);
+    if (response.status == 200) {
+        oListDistrict.value = response.data;
+    }
+}
+
 function handleSubmit() {
     if (validationFields() === 0) {
         console.error('Complete bien los campos');
     } else {
         console.log('Datos Correctos, enviando datos:', {
-            idOrganizacion: ruc.value,
+            idOrganizacion: String(ruc.value),
             razonSocial: name.value,
-            telefono: phoneNumber.value,
+            telefono: String(phoneNumber.value),
             direccion: direction.value,
             idDistrito: district.value,
             contrasenia: passwordConfirm.value
@@ -128,4 +153,3 @@ async function registrar() {
 }
 
 </script>
-

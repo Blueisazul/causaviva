@@ -2,10 +2,10 @@ import axios from 'axios';
 
 const API_URL = 'https://localhost:7079/api';
 
-const RegisterVolunteerService = {
+const RegisterOrganizationService = {
 
-    async CreateRegisterVolunteerService(data) {
-        return axios.post(`${API_URL}/Usuario/Registrar`, data, {
+    async CreateRegisterOrganizationService(data) {
+        return axios.post(`${API_URL}/Organizacion/Registrar`, data, {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -14,4 +14,4 @@ const RegisterVolunteerService = {
     
 };
 
-export default RegisterVolunteerService;
+export default RegisterOrganizationService;

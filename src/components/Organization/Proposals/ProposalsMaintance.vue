@@ -152,7 +152,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, computed } from 'vue';
+import { onMounted, ref, computed, resolveDirective } from 'vue';
 import { useRouter } from 'vue-router';
 import ProposalsService from '../../../services/ProposalsService';
 
@@ -178,21 +178,23 @@ const totalPages = computed(() => {
 //#region Eventos
 onMounted(() => {
     Initialize();
-    console.log('Propuestas component mounted');
 });
 
 //#region Metodos
+const idUser = localStorage.getItem('userId');
+
 const Initialize = () => {
     LoadPropuestas();
 }
 
 const LoadPropuestas = async () => {
-    const idUser = localStorage.getItem('organizationId');
+    console.log("idUserLocalStorage:",idUser);
     if (!idUser) {
         console.error('No se encontró idUser en localStorage');
         return;
     }
     const response = await ProposalsService.GetProposalsService(idUser);
+    console.log("loadPropuestas:",response);
     if (response.status == 200) {
         oListPropuestas.value = response.data;
     }
