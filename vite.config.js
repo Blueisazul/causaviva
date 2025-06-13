@@ -3,6 +3,9 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [vue(), tailwindcss()],
-  base: '/', // importante para Azure
+  plugins: [vue()],
+  base: '/', // importante si estás desplegando en raíz
+  build: {
+    outDir: 'dist'
+  }
 })
