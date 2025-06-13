@@ -45,7 +45,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory('/causaviva/'), // o solo '/' si tu app está en la raíz
+  history: createWebHistory('/'), // o solo '/' si tu app está en la raíz
   routes,
 })
 
