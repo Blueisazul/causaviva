@@ -20,7 +20,7 @@ const showSidebar = computed(() => route.path.startsWith('/portal')); // Sidebar
 
 </script>
 
-<style scoped>
+<style>
 .layout {
   width: 100%;
   height: 100vh;
