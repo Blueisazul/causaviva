@@ -53,7 +53,7 @@
       <div class="relative flex-shrink-0">
         <img
           class="w-full sm:w-40 h-40 rounded-xl object-cover shadow-md group-hover:shadow-lg transition duration-300"
-          src="/public/imagenes/ban1.jpg"
+          src="/imagenes/ban1.jpg"
           alt="Equipo de voluntarios en acción"
         />
         <div class="absolute -inset-2 border-2 border-yellow-400 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"></div>
@@ -71,7 +71,7 @@
       <div class="relative flex-shrink-0">
         <img
           class="w-full sm:w-40 h-40 rounded-xl object-cover shadow-md group-hover:shadow-lg transition duration-300"
-          src="/public/imagenes/ban2.jpg"
+          src="/imagenes/ban2.jpg"
           alt="Taller educativo con adultos mayores"
         />
         <div class="absolute -inset-2 border-2 border-yellow-400 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none"></div>
