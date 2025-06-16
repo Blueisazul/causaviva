@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://causaback-c2cvfxhqbjhdb7ea.eastus-01.azurewebsites.net';
+const API_URL = 'https://causaback-c2cvfxhqbjhdb7ea.eastus-01.azurewebsites.net/api';
 
 const ProposalsService = {
     //Método GET para obtener datos de la organización

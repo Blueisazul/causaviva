@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://localhost:7079/api';
+const API_URL = 'https://causaback-c2cvfxhqbjhdb7ea.eastus-01.azurewebsites.net/api';
 
 const ProfileOrganizationService = {
     async GetProfileOrganizationService(idOrganizacion) {
