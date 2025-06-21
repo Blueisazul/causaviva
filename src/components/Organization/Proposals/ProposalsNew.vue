@@ -10,20 +10,22 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Campo Título -->
                     <div class="relative">
-                        <input id="txtTitle" v-model="oPropuestas.tituloPropuesta" 
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"/>
-                        <label for="txtTitle" 
-                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                        <input id="txtTitle" v-model="oPropuestas.tituloPropuesta"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer" />
+                        <label for="txtTitle"
+                            class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
                             Título
                         </label>
                     </div>
 
+                    <div class="relative md:col-span-2"></div>
+
                     <!-- Campo Descripción -->
                     <div class="relative md:col-span-2">
                         <textarea id="txtDescription" rows="2" v-model="oPropuestas.descripcionPropuesta"
-                                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"></textarea>
-                        <label for="txtDescription" 
-                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"></textarea>
+                        <label for="txtDescription"
+                            class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
                             Descripción
                         </label>
                     </div>
@@ -31,19 +33,21 @@
                     <!-- Campo Dirección -->
                     <div class="relative md:col-span-2">
                         <textarea id="txtDirection" rows="2" v-model="oPropuestas.direccion"
-                                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"></textarea>
-                        <label for="txtDirection" 
-                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"></textarea>
+                        <label for="txtDirection"
+                            class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
                             Dirección
                         </label>
                     </div>
 
+                    <div class="relative"></div>
+
                     <!-- Campo Fecha Inicio -->
                     <div class="relative">
                         <input id="txtInitDate" v-model="oPropuestas.fechaInicio" type="date"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"/>
-                        <label for="txtInitDate" 
-                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer" />
+                        <label for="txtInitDate"
+                            class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
                             Fecha Inicio
                         </label>
                     </div>
@@ -51,9 +55,9 @@
                     <!-- Campo Fecha Final -->
                     <div class="relative">
                         <input id="txtFinalDate" v-model="oPropuestas.fechaFinal" type="date"
-                               class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"/>
-                        <label for="txtFinalDate" 
-                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer" />
+                        <label for="txtFinalDate"
+                            class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
                             Fecha Final
                         </label>
                     </div>
@@ -68,13 +72,13 @@
             </div>
 
             <div class="flex flex-col space-y-6">
-                <div class="grid grid-cols-1 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Campo Descripción Requisitos -->
-                    <div class="relative">
-                        <textarea id="txtDescriptionRequirements" rows="2" v-model="oPropuestas.descripcionRequisito"
-                                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"></textarea>
-                        <label for="txtDescriptionRequirements" 
-                               class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
+                    <div class="relative md:col-span-2">
+                        <textarea id="txtDescriptionRequirements" rows="4" v-model="oPropuestas.descripcionRequisito"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent peer"></textarea>
+                        <label for="txtDescriptionRequirements"
+                            class="absolute left-3 -top-2.5 bg-white px-1 text-sm text-gray-500 transition-all peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-500">
                             Descripción
                         </label>
                     </div>
@@ -85,13 +89,13 @@
 
             <!-- Botones de Acción -->
             <div class="flex justify-start space-x-3">
-                <button @click="SaveProposals" 
-                        class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <button @click="SaveProposals"
+                    class="flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     <i class="pi pi-save mr-2"></i>
                     Guardar
                 </button>
-                <button @click="BackTo" 
-                        class="flex items-center px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
+                <button @click="BackTo"
+                    class="flex items-center px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
                     <i class="pi pi-arrow-left mr-2"></i>
                     Atrás
                 </button>
@@ -139,7 +143,13 @@ const LoadPropuestasDetalle = async (idVoluntariado) => {
     console.log('Response from GetProposalsDetailService:', response);
     if (response.status == 200) {
         console.log('Propuestas loaded successfully:', response.data);
-        oPropuestas.value = response.data[0];
+        const propuesta = response.data[0];
+
+        // Transformar fechas antes de asignarlas
+        propuesta.fechaInicio = new Date(propuesta.fechaInicio).toISOString().slice(0, 10);
+        propuesta.fechaFinal = new Date(propuesta.fechaFinal).toISOString().slice(0, 10);
+
+        oPropuestas.value = propuesta;
     }
 }
 
@@ -173,7 +183,7 @@ const UpdateProposals = async () => {
 }
 
 const CreateProposals = async () => {
-    const idOrganizacion = localStorage.getItem('organizationId');
+    const idOrganizacion = localStorage.getItem('userId');
 
     if (!idOrganizacion) {
         console.error('Error: No se encontró idOrganizacion en localStorage.');

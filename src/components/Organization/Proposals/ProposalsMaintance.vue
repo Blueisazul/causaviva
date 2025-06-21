@@ -152,9 +152,11 @@
 </template>
 
 <script setup>
-import { onMounted, ref, computed, resolveDirective } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 import { useRouter } from 'vue-router';
 import ProposalsService from '../../../services/ProposalsService';
+
+// se quita , resolveDirective de onMounted
 
 const oListPropuestas = ref([]);
 const router = useRouter();
