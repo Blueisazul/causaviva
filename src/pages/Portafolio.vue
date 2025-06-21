@@ -1,7 +1,7 @@
 <script setup>
 import FooterSection from "../components/FooterSection.vue";
 import NavbarUsuario from "../components/NavbarUsuario.vue";
-import Cataloge from "../components/Cataloge.vue";
+import Cataloge from "../components/Volunteer/Proposals/Cataloge.vue";
 
 
 </script>
